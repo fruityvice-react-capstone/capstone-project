@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { withRouter } from "react-router";
+
 class Navigation extends Component {
   constructor(props) {
     super(props);
@@ -24,7 +25,10 @@ class Navigation extends Component {
               <button onClick={this.testNav}>Characters</button>
             </li>
             <li>
-              <Link to="/fruitapp">Fruit App</Link>
+              <Link to="/search">Search</Link>
+            </li>
+            <li>
+              <Link to="/random">Random</Link>
             </li>
           </ul>
         </nav>
