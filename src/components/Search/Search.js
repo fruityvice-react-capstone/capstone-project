@@ -1,9 +1,14 @@
 import React, { Component } from "react";
 
-class FruitInfo extends Component {
+class Search extends Component {
   render() {
-    return <div>Search</div>;
+    return (
+      <div>
+        <div>Search</div>
+        <p>This is a serach bar</p>
+      </div>
+    );
   }
 }
 
-export default FruitInfo;
+export default Search;
