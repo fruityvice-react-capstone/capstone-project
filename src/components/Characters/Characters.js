@@ -1,11 +1,19 @@
 import React, { Component } from "react";
 
 class About extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      characters: [],
+    };
+  }
+  componentDidMount() {
+    fetch;
+  }
   render() {
     return (
       <div>
-        <div>About</div>
-        <p>blah blah</p>
+        <h2>Name</h2>
       </div>
     );
   }
