@@ -7,13 +7,19 @@ class About extends Component {
       characters: [],
     };
   }
-  componentDidMount() {
-    fetch;
-  }
+  // componentDidMount() {
+  //   // const selectedId;
+  //   fetch(`https://rickandmortyapi.com/api/character/${selectedId}`);
+  // }
   render() {
     return (
       <div>
         <h2>Name</h2>
+        <img></img>
+        <strong>Species: </strong>
+        <strong>Status: </strong>
+        <strong>Gender: </strong>
+        <strong>Origin: </strong>
       </div>
     );
   }

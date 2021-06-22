@@ -13,18 +13,19 @@ function App() {
       <div className="navigationClass">
         <Navigation />
       </div>
-      <CharacterList />
-      {/* <Switch>
-        <Route exact path="/home">
+
+      <Switch>
+        {/* <Route exact path="/home">
           <Home />
+        </Route> */}
+        <Route exact path="/character">
+          <CharacterList />
         </Route>
-        <Route exact path="/about">
-          <Characters />
-        </Route>
-        <Route exact path="/fruitInfo">
+        <Route path="/character/:selectedId" component={Characters} />
+        {/* <Route exact path="/fruitInfo">
           <Search />
-        </Route>
-      </Switch> */}
+        </Route> */}
+      </Switch>
     </div>
   );
 }
