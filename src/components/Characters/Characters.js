@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+
 class About extends Component {
   constructor(props) {
     super(props);
@@ -20,9 +21,10 @@ class About extends Component {
         <strong>Status: </strong>
         <strong>Gender: </strong>
         <strong>Origin: </strong>
+
       </div>
     );
   }
 }
 
-export default About;
+export default Characters;

@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 
 class Search extends Component {
+
+
   constructor(props) {
     super(props);
 
@@ -112,6 +114,7 @@ class Search extends Component {
           <input type="submit"></input>
         </form>
         <ul>{statusResultsItems}</ul>
+
       </div>
     );
   }

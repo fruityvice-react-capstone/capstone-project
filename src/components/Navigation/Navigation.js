@@ -1,37 +1,32 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { withRouter } from "react-router";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import { Navbar,Nav,NavDropdown,Form,FormControl,Button } from 'react-bootstrap'
+
 
 class Navigation extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { message: "blah" };
-    this.testNav = this.testNav.bind(this);
-  }
-  testNav() {
-    this.props.history.push("/about");
-    console.log("this is being clicked");
-  }
   render() {
     return (
       <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              {/* <Link to="/about">About</Link> */}
-              <button onClick={this.testNav}>Characters</button>
-            </li>
-            <li>
-              <Link to="/search">Search</Link>
-            </li>
-            <li>
-              <Link to="/random">Random</Link>
-            </li>
-          </ul>
-        </nav>
+        <Container fluid>
+          <Row>
+            <Col>
+              {" "}
+              <Link to="/home">Home</Link>{" "}
+            </Col>
+            <Col>
+              <Link to="/characters">Characters</Link>
+            </Col>
+            <Col>
+              {" "}
+              <Link to="/search">Search</Link>{" "}
+            </Col>
+          </Row>
+        </Container>
+
       </div>
     );
   }
