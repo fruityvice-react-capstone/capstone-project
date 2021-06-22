@@ -9,6 +9,12 @@ import CharacterList from "./components/CharacterList/CharacterList";
 
 import { Switch, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+  integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+  crossorigin="anonymous"
+/>;
 
 function App() {
   return (
@@ -22,19 +28,20 @@ function App() {
       </div>
       <hr></hr>
       <Switch>
-        {<Route exact path="/home">
-          <Home />
-        </Route>}
-        <Route exact path="/character">
+        {
+          <Route exact path="/">
+            <Home />
+          </Route>
+        }
+        <Route exact path="/characters">
           <CharacterList />
         </Route>
         <Route path="/character/:selectedId" component={Characters} />
 
-<Route exact path="/Search">
-
+        <Route path="/Search">
           <Search />
         </Route>
-        <Route exact path="/Random">
+        <Route path="/Random">
           <Random />
         </Route>
       </Switch>
