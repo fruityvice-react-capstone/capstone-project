@@ -28,7 +28,7 @@ function App() {
 <Route exact path="/Search">
           <Search />
         </Route>
-        <Route exact path="/Random">
+        <Route path="/Random/: id" component={Random}>
           <Random />
         </Route>
       </Switch>
