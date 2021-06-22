@@ -5,9 +5,12 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <div>Home</div>
-        <p>You are home</p>
-        <Image src="/images/ayIQHe5.jpeg" fluid />
+        <div className="homeImage">
+          <Image
+            src="/images/ntcywUtfIcq3_gMOJk_tQh3Ior3oFARLga_64nlBUfs.png"
+            fluid
+          />
+        </div>
       </div>
     );
   }
