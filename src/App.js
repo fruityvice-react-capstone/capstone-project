@@ -13,9 +13,11 @@ function App() {
       <div className="headerClass">
         <Header />
       </div>
+      <hr></hr>
       <div className="navigationClass">
         <Navigation />
       </div>
+      <hr></hr>
       <Switch>
         <Route exact path="/home">
           <Home />
