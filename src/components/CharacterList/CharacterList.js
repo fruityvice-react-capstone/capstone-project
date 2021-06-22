@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import jsonData from "../../characters.json";
 
 import { Link } from "react-router-dom";
 
@@ -6,45 +7,32 @@ class CharacterList extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      characterName: "",
-      characterArray: [],
       pageTotal: 0,
     };
   }
 
-  componentDidMount() {
-    fetch("https://rickandmortyapi.com/api/character")
-      .then((response) => response.json())
-      .then((data) => {
-        this.setState({
-          pageTotal: data.info.pages,
-        });
-        console.log("pages", this.state.pageTotal);
-      });
-  }
-  getCharacters() {
-    for (let page = 1; page <= this.state.pageTotal; page++) {
-      fetch(`https://rickandmortyapi.com/api/character?page=${page}`)
-        .then((response) => response.json())
-        .then((data) => {
-          console.log("characters", data);
-          this.setState({
-            characterArray: data.results,
-          });
-        });
-    }
-    return this.state.characterArray;
-  }
+  //   componentDidMount() {
+  //     this.allId();
+  //     console.log(this.state.characterArray);
+  //     fetch(`capstone-project\src\characters.json`)
+  //       .then((response) => response.json())
+  //       .then((data) => {
+  //         this.setState({
+  //           characterArray: data,
+  //         });
+  //         console.log("characters", this.state.characterArray);
+  //       });
+  //   }
 
   render() {
-    console.log(this.state.characterArray);
-    // const characterItemList = this.characterArray.map((data, index) => {
-    //   return (
-    //     <li key={`${data.id}-${index}`}>
-    //       <Link to={data.id}>{data.name}</Link>
-    //     </li>
-    //   );
-    // });
+    console.log(jsonData);
+    const characterItemList = jsonData.map((data, index) => {
+      return (
+        <li key={`${data.id}-${index}`}>
+          <Link to={`/${data.id}`}>{data.name}</Link>
+        </li>
+      );
+    });
     return (
       <div>
         <nav>
@@ -52,7 +40,9 @@ class CharacterList extends Component {
             <li>A</li>
           </ul>
         </nav>
-        <body>{/* <ul>{characterItemList}</ul> */}</body>
+        <body>
+          <ul>{characterItemList}</ul>
+        </body>
       </div>
     );
   }
