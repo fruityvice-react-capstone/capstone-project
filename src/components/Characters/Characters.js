@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 
-
-class About extends Component {
+class Characters extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -21,7 +20,6 @@ class About extends Component {
         <strong>Status: </strong>
         <strong>Gender: </strong>
         <strong>Origin: </strong>
-
       </div>
     );
   }
