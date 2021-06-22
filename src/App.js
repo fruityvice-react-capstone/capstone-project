@@ -4,6 +4,7 @@ import Home from "./components/Home/Home";
 import Characters from "./components/Characters/Characters";
 import Search from "./components/Search/Search";
 import Random from "./components/Random/Random";
+import CharacterList from "./components/CharacterList/CharacterList";
 
 import { Switch, Route } from "react-router-dom";
 
@@ -15,13 +16,16 @@ function App() {
       </div>
 
       <Switch>
-        <Route exact path="/home">
+        {<Route exact path="/home">
           <Home />
+        </Route>}
+        <Route exact path="/character">
+          <CharacterList />
         </Route>
-        <Route exact path="/about">
-          <Characters />
-        </Route>
-        <Route exact path="/Search">
+    
+        <Route path="/character/:selectedId" component={Characters} />
+
+<Route exact path="/Search">
           <Search />
         </Route>
         <Route exact path="/Random">
