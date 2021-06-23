@@ -23,25 +23,24 @@ function App() {
       <div className="headerClass">
         <Header />
       </div>
-      {/* <Container> */}
-      <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route exact path="/characters">
-          <CharacterList />
-        </Route>
-        <Route path="/characters/:selectedId" component={Characters} />
-        <Route path="/Search">
-          <Search />
-        </Route>
-
-        {/* no longer needed using materials-ui
+      <div className="bodyComponents">
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/characters">
+            <CharacterList />
+          </Route>
+          <Route path="/Search">
+            <Search />
+          </Route>
+          <Route path="/characters/:selectedId" component={Characters} />
+          {/* no longer needed using materials-ui
         <Route path="/random">
           <Random />
         </Route> */}
-      </Switch>
-      {/* </Container> */}
+        </Switch>
+      </div>
     </div>
   );
 }

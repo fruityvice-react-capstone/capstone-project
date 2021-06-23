@@ -15,4 +15,5 @@
 .jumbotron {
   color: #ffffff;
   background-color: #ffffff !important;
+  padding-bottom: 0 !important;
 }
