@@ -4,6 +4,7 @@ import { withRouter } from "react-router";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import "./Navigation.css";
 import {
   Navbar,
   Nav,
@@ -16,7 +17,7 @@ import {
 class Navigation extends Component {
   render() {
     return (
-      <div>
+      <div className="Navigation-container">
         <Container fluid>
           <Row>
             <Col>
@@ -29,6 +30,10 @@ class Navigation extends Component {
             <Col>
               {" "}
               <Link to="/search">Search</Link>{" "}
+            </Col>
+            <Col>
+              {" "}
+              <Link to="/random">Random</Link>{" "}
             </Col>
           </Row>
         </Container>
