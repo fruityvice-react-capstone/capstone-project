@@ -9,11 +9,12 @@ import Col from "react-bootstrap/Col";
 import { Navbar, Nav, NavDropdown, Form, FormControl } from "react-bootstrap";
 
 class Navigation extends Component {
-  randomNumber = () => {
+  randomNumber() {
     const min = 1;
     const max = 671;
-    return (Math.random() * (max - min) + min).toFixed(0);
-  };
+    let randomNum = (Math.random() * (max - min) + min).toFixed(0);
+    return randomNum;
+  }
   render() {
     return (
       <div className="Navigation-container">

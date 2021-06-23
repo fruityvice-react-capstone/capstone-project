@@ -34,7 +34,7 @@ function App() {
           <Route path="/Search">
             <Search />
           </Route>
-          <Route path="/characters/:selectedId" component={Characters} />
+          <Route exact path="/characters/:selectedId" component={Characters} />
           {/* no longer needed using materials-ui
         <Route path="/random">
           <Random />
