@@ -20,15 +20,16 @@ class Navigation extends Component {
         <Container fluid>
           <Row>
             <Col>
-              {" "}
-              <Link to="/">Home</Link>{" "}
+              <Link to="/">Home</Link>
             </Col>
             <Col>
               <Link to="/characters">Characters</Link>
             </Col>
             <Col>
-              {" "}
-              <Link to="/search">Search</Link>{" "}
+              <Link to="/search">Search</Link>
+            </Col>
+            <Col>
+              <Link to="/characters/:selectedId">Random</Link>
             </Col>
           </Row>
         </Container>

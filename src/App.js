@@ -28,16 +28,13 @@ function App() {
       </div>
       <hr></hr>
       <Switch>
-        {
-          <Route exact path="/">
-            <Home />
-          </Route>
-        }
+        <Route exact path="/">
+          <Home />
+        </Route>
         <Route exact path="/characters">
           <CharacterList />
         </Route>
-        <Route path="/character/:selectedId" component={Characters} />
-
+        <Route path="/characters/:selectedId" component={Characters} />
         <Route path="/Search">
           <Search />
         </Route>
