@@ -1,5 +1,6 @@
 import "./App.css";
 import Header from "./components/Header/Header";
+import Navigation from "./components/Navigation/Navigation";
 import Home from "./components/Home/Home";
 import Characters from "./components/Characters/Characters";
 import Search from "./components/Search/Search";
@@ -20,27 +21,22 @@ import "bootstrap/dist/css/bootstrap.css";
 function App() {
   return (
     <div className="App">
-      <div className="headerClass">
+      <div className="navigationClass">
         <Header />
       </div>
-      <div className="bodyComponents">
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route exact path="/characters">
-            <CharacterList />
-          </Route>
-          <Route path="/Search">
-            <Search />
-          </Route>
-          <Route exact path="/characters/:selectedId" component={Characters} />
-          {/* no longer needed using materials-ui
-        <Route path="/random">
-          <Random />
-        </Route> */}
-        </Switch>
-      </div>
+      <hr></hr>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route exact path="/characters">
+          <CharacterList />
+        </Route>
+        <Route path="/characters/:selectedId" component={Characters} />
+        <Route path="/Search">
+          <Search />
+        </Route>
+      </Switch>
     </div>
   );
 }

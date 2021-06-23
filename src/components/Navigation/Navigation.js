@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Button from "@material-ui/core/Button";
-import { withRouter } from "react-router";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -44,4 +43,4 @@ class Navigation extends Component {
   }
 }
 
-export default withRouter(Navigation);
+export default Navigation;
