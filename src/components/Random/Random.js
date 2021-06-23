@@ -17,7 +17,7 @@ class Random extends Component {
     const max = 671;
     return (Math.random() * (max - min) + min).toFixed(0);
   };
-
+  
   componentDidMount() {
     console.log("this is the componentDidMount");
 
