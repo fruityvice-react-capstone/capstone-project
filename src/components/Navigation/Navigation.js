@@ -30,7 +30,10 @@ class Navigation extends Component {
               <Link to="/search">Search</Link>
             </Col>
             <Col>
-              <Button component={Link} to={`/characters/${this.randomNumber}`}>
+              <Button
+                component={Link}
+                to={`/characters/${this.randomNumber()}`}
+              >
                 Random Character
               </Button>
             </Col>

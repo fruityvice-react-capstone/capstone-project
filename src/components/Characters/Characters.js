@@ -42,7 +42,7 @@ class Characters extends Component {
         <br></br>
         <strong>Gender:{this.state.characters.gender}</strong>
         <br></br>
-        {/* <strong>Origin:{this.state.characters.origin.name}</strong> */}
+        <strong>Origin:{this.state.characters.origin.name}</strong>
       </div>
     );
   }
