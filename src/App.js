@@ -1,5 +1,6 @@
 import "./App.css";
 import Header from "./components/Header/Header";
+import Navigation from "./components/Navigation/Navigation";
 import Home from "./components/Home/Home";
 import Characters from "./components/Characters/Characters";
 import Search from "./components/Search/Search";
@@ -20,10 +21,10 @@ import "bootstrap/dist/css/bootstrap.css";
 function App() {
   return (
     <div className="App">
-      <div className="headerClass">
+      <div className="navigationClass">
         <Header />
       </div>
-      {/* <Container> */}
+      <hr></hr>
       <Switch>
         <Route exact path="/">
           <Home />
@@ -35,13 +36,7 @@ function App() {
         <Route path="/Search">
           <Search />
         </Route>
-
-        {/* no longer needed using materials-ui
-        <Route path="/random">
-          <Random />
-        </Route> */}
       </Switch>
-      {/* </Container> */}
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import jsonData from "../../characters.json";
+import "./CharacterList.css";
 
 import { Link } from "react-router-dom";
 
@@ -74,278 +75,276 @@ class CharacterList extends Component {
 
     return (
       <div>
-        <body>
-          <ul>
-            <p>A</p>
-            {aArray.map((data, index) => {
-              return (
-                <li key={`${data.id}-${index}`}>
-                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
-                </li>
-              );
-            })}
-          </ul>
-          <ul>
-            <p>B</p>
-            {bArray.map((data, index) => {
-              return (
-                <li key={`${data.id}-${index}`}>
-                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
-                </li>
-              );
-            })}
-          </ul>
-          <ul>
-            <p>C</p>
-            {cArray.map((data, index) => {
-              return (
-                <li key={`${data.id}-${index}`}>
-                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
-                </li>
-              );
-            })}
-          </ul>
-          <ul>
-            <p>D</p>
-            {dArray.map((data, index) => {
-              return (
-                <li key={`${data.id}-${index}`}>
-                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
-                </li>
-              );
-            })}
-          </ul>
-          <ul>
-            <p>E</p>
-            {eArray.map((data, index) => {
-              return (
-                <li key={`${data.id}-${index}`}>
-                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
-                </li>
-              );
-            })}
-          </ul>
-          <ul>
-            <p>F</p>
-            {fArray.map((data, index) => {
-              return (
-                <li key={`${data.id}-${index}`}>
-                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
-                </li>
-              );
-            })}
-          </ul>
-          <ul>
-            <p>G</p>
-            {gArray.map((data, index) => {
-              return (
-                <li key={`${data.id}-${index}`}>
-                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
-                </li>
-              );
-            })}
-          </ul>
-          <ul>
-            <p>H</p>
-            {hArray.map((data, index) => {
-              return (
-                <li key={`${data.id}-${index}`}>
-                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
-                </li>
-              );
-            })}
-          </ul>
-          <ul>
-            <p>I</p>
-            {iArray.map((data, index) => {
-              return (
-                <li key={`${data.id}-${index}`}>
-                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
-                </li>
-              );
-            })}
-          </ul>
-          <ul>
-            <p>J</p>
-            {jArray.map((data, index) => {
-              return (
-                <li key={`${data.id}-${index}`}>
-                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
-                </li>
-              );
-            })}
-          </ul>
-          <ul>
-            <p>K</p>
-            {kArray.map((data, index) => {
-              return (
-                <li key={`${data.id}-${index}`}>
-                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
-                </li>
-              );
-            })}
-          </ul>
-          <ul>
-            <p>L</p>
-            {lArray.map((data, index) => {
-              return (
-                <li key={`${data.id}-${index}`}>
-                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
-                </li>
-              );
-            })}
-          </ul>
-          <ul>
-            <p>M</p>
-            {mArray.map((data, index) => {
-              return (
-                <li key={`${data.id}-${index}`}>
-                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
-                </li>
-              );
-            })}
-          </ul>
-          <ul>
-            <p>N</p>
-            {nArray.map((data, index) => {
-              return (
-                <li key={`${data.id}-${index}`}>
-                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
-                </li>
-              );
-            })}
-          </ul>
-          <ul>
-            <p>O</p>
-            {oArray.map((data, index) => {
-              return (
-                <li key={`${data.id}-${index}`}>
-                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
-                </li>
-              );
-            })}
-          </ul>
-          <ul>
-            <p>P</p>
-            {pArray.map((data, index) => {
-              return (
-                <li key={`${data.id}-${index}`}>
-                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
-                </li>
-              );
-            })}
-          </ul>
-          <ul>
-            <p>Q</p>
-            {qArray.map((data, index) => {
-              return (
-                <li key={`${data.id}-${index}`}>
-                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
-                </li>
-              );
-            })}
-          </ul>
-          <ul>
-            <p>R</p>
-            {rArray.map((data, index) => {
-              return (
-                <li key={`${data.id}-${index}`}>
-                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
-                </li>
-              );
-            })}
-          </ul>
-          <ul>
-            <p>S</p>
-            {sArray.map((data, index) => {
-              return (
-                <li key={`${data.id}-${index}`}>
-                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
-                </li>
-              );
-            })}
-          </ul>
-          <ul>
-            <p>T</p>
-            {tArray.map((data, index) => {
-              return (
-                <li key={`${data.id}-${index}`}>
-                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
-                </li>
-              );
-            })}
-          </ul>
-          <ul>
-            <p>U</p>
-            {uArray.map((data, index) => {
-              return (
-                <li key={`${data.id}-${index}`}>
-                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
-                </li>
-              );
-            })}
-          </ul>
-          <ul>
-            <p>V</p>
-            {vArray.map((data, index) => {
-              return (
-                <li key={`${data.id}-${index}`}>
-                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
-                </li>
-              );
-            })}
-          </ul>
-          <ul>
-            <p>W</p>
-            {wArray.map((data, index) => {
-              return (
-                <li key={`${data.id}-${index}`}>
-                  <Link to={`/charactesr/${data.id}`}>{data.name}</Link>
-                </li>
-              );
-            })}
-          </ul>
-          <ul>
-            <p>X</p>
-            {xArray.map((data, index) => {
-              return (
-                <li key={`${data.id}-${index}`}>
-                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
-                </li>
-              );
-            })}
-          </ul>
-          <ul>
-            <p>Y</p>
-            {yArray.map((data, index) => {
-              return (
-                <li key={`${data.id}-${index}`}>
-                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
-                </li>
-              );
-            })}
-          </ul>
-          <ul>
-            <p>Z</p>
-            {zArray.map((data, index) => {
-              return (
-                <li key={`${data.id}-${index}`}>
-                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
-                </li>
-              );
-            })}
-          </ul>
-          <ul>
-            <p>#</p>
-            {numArray.map((data, index) => {
-              return (
-                <li key={`${data.id}-${index}`}>
-                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
-                </li>
-              );
-            })}
-          </ul>
-        </body>
+        <ul>
+          <p>A</p>
+          {aArray.map((data, index) => {
+            return (
+              <li key={`${data.id}-${index}`}>
+                <Link to={`/characters/${data.id}`}>{data.name}</Link>
+              </li>
+            );
+          })}
+        </ul>
+        <ul>
+          <p>B</p>
+          {bArray.map((data, index) => {
+            return (
+              <li key={`${data.id}-${index}`}>
+                <Link to={`/characters/${data.id}`}>{data.name}</Link>
+              </li>
+            );
+          })}
+        </ul>
+        <ul>
+          <p>C</p>
+          {cArray.map((data, index) => {
+            return (
+              <li key={`${data.id}-${index}`}>
+                <Link to={`/characters/${data.id}`}>{data.name}</Link>
+              </li>
+            );
+          })}
+        </ul>
+        <ul>
+          <p>D</p>
+          {dArray.map((data, index) => {
+            return (
+              <li key={`${data.id}-${index}`}>
+                <Link to={`/characters/${data.id}`}>{data.name}</Link>
+              </li>
+            );
+          })}
+        </ul>
+        <ul>
+          <p>E</p>
+          {eArray.map((data, index) => {
+            return (
+              <li key={`${data.id}-${index}`}>
+                <Link to={`/characters/${data.id}`}>{data.name}</Link>
+              </li>
+            );
+          })}
+        </ul>
+        <ul>
+          <p>F</p>
+          {fArray.map((data, index) => {
+            return (
+              <li key={`${data.id}-${index}`}>
+                <Link to={`/characters/${data.id}`}>{data.name}</Link>
+              </li>
+            );
+          })}
+        </ul>
+        <ul>
+          <p>G</p>
+          {gArray.map((data, index) => {
+            return (
+              <li key={`${data.id}-${index}`}>
+                <Link to={`/characters/${data.id}`}>{data.name}</Link>
+              </li>
+            );
+          })}
+        </ul>
+        <ul>
+          <p>H</p>
+          {hArray.map((data, index) => {
+            return (
+              <li key={`${data.id}-${index}`}>
+                <Link to={`/characters/${data.id}`}>{data.name}</Link>
+              </li>
+            );
+          })}
+        </ul>
+        <ul>
+          <p>I</p>
+          {iArray.map((data, index) => {
+            return (
+              <li key={`${data.id}-${index}`}>
+                <Link to={`/characters/${data.id}`}>{data.name}</Link>
+              </li>
+            );
+          })}
+        </ul>
+        <ul>
+          <p>J</p>
+          {jArray.map((data, index) => {
+            return (
+              <li key={`${data.id}-${index}`}>
+                <Link to={`/characters/${data.id}`}>{data.name}</Link>
+              </li>
+            );
+          })}
+        </ul>
+        <ul>
+          <p>K</p>
+          {kArray.map((data, index) => {
+            return (
+              <li key={`${data.id}-${index}`}>
+                <Link to={`/characters/${data.id}`}>{data.name}</Link>
+              </li>
+            );
+          })}
+        </ul>
+        <ul>
+          <p>L</p>
+          {lArray.map((data, index) => {
+            return (
+              <li key={`${data.id}-${index}`}>
+                <Link to={`/characters/${data.id}`}>{data.name}</Link>
+              </li>
+            );
+          })}
+        </ul>
+        <ul>
+          <p>M</p>
+          {mArray.map((data, index) => {
+            return (
+              <li key={`${data.id}-${index}`}>
+                <Link to={`/characters/${data.id}`}>{data.name}</Link>
+              </li>
+            );
+          })}
+        </ul>
+        <ul>
+          <p>N</p>
+          {nArray.map((data, index) => {
+            return (
+              <li key={`${data.id}-${index}`}>
+                <Link to={`/characters/${data.id}`}>{data.name}</Link>
+              </li>
+            );
+          })}
+        </ul>
+        <ul>
+          <p>O</p>
+          {oArray.map((data, index) => {
+            return (
+              <li key={`${data.id}-${index}`}>
+                <Link to={`/characters/${data.id}`}>{data.name}</Link>
+              </li>
+            );
+          })}
+        </ul>
+        <ul>
+          <p>P</p>
+          {pArray.map((data, index) => {
+            return (
+              <li key={`${data.id}-${index}`}>
+                <Link to={`/characters/${data.id}`}>{data.name}</Link>
+              </li>
+            );
+          })}
+        </ul>
+        <ul>
+          <p>Q</p>
+          {qArray.map((data, index) => {
+            return (
+              <li key={`${data.id}-${index}`}>
+                <Link to={`/characters/${data.id}`}>{data.name}</Link>
+              </li>
+            );
+          })}
+        </ul>
+        <ul>
+          <p>R</p>
+          {rArray.map((data, index) => {
+            return (
+              <li key={`${data.id}-${index}`}>
+                <Link to={`/characters/${data.id}`}>{data.name}</Link>
+              </li>
+            );
+          })}
+        </ul>
+        <ul>
+          <p>S</p>
+          {sArray.map((data, index) => {
+            return (
+              <li key={`${data.id}-${index}`}>
+                <Link to={`/characters/${data.id}`}>{data.name}</Link>
+              </li>
+            );
+          })}
+        </ul>
+        <ul>
+          <p>T</p>
+          {tArray.map((data, index) => {
+            return (
+              <li key={`${data.id}-${index}`}>
+                <Link to={`/characters/${data.id}`}>{data.name}</Link>
+              </li>
+            );
+          })}
+        </ul>
+        <ul>
+          <p>U</p>
+          {uArray.map((data, index) => {
+            return (
+              <li key={`${data.id}-${index}`}>
+                <Link to={`/characters/${data.id}`}>{data.name}</Link>
+              </li>
+            );
+          })}
+        </ul>
+        <ul>
+          <p>V</p>
+          {vArray.map((data, index) => {
+            return (
+              <li key={`${data.id}-${index}`}>
+                <Link to={`/characters/${data.id}`}>{data.name}</Link>
+              </li>
+            );
+          })}
+        </ul>
+        <ul>
+          <p>W</p>
+          {wArray.map((data, index) => {
+            return (
+              <li key={`${data.id}-${index}`}>
+                <Link to={`/charactesr/${data.id}`}>{data.name}</Link>
+              </li>
+            );
+          })}
+        </ul>
+        <ul>
+          <p>X</p>
+          {xArray.map((data, index) => {
+            return (
+              <li key={`${data.id}-${index}`}>
+                <Link to={`/characters/${data.id}`}>{data.name}</Link>
+              </li>
+            );
+          })}
+        </ul>
+        <ul>
+          <p>Y</p>
+          {yArray.map((data, index) => {
+            return (
+              <li key={`${data.id}-${index}`}>
+                <Link to={`/characters/${data.id}`}>{data.name}</Link>
+              </li>
+            );
+          })}
+        </ul>
+        <ul>
+          <p>Z</p>
+          {zArray.map((data, index) => {
+            return (
+              <li key={`${data.id}-${index}`}>
+                <Link to={`/characters/${data.id}`}>{data.name}</Link>
+              </li>
+            );
+          })}
+        </ul>
+        <ul>
+          <p>#</p>
+          {numArray.map((data, index) => {
+            return (
+              <li key={`${data.id}-${index}`}>
+                <Link to={`/characters/${data.id}`}>{data.name}</Link>
+              </li>
+            );
+          })}
+        </ul>
       </div>
     );
   }
