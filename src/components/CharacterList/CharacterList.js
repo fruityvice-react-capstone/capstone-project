@@ -80,7 +80,7 @@ class CharacterList extends Component {
             {aArray.map((data, index) => {
               return (
                 <li key={`${data.id}-${index}`}>
-                  <Link to={`/${data.id}`}>{data.name}</Link>
+                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
                 </li>
               );
             })}
@@ -90,7 +90,7 @@ class CharacterList extends Component {
             {bArray.map((data, index) => {
               return (
                 <li key={`${data.id}-${index}`}>
-                  <Link to={`/${data.id}`}>{data.name}</Link>
+                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
                 </li>
               );
             })}
@@ -100,7 +100,7 @@ class CharacterList extends Component {
             {cArray.map((data, index) => {
               return (
                 <li key={`${data.id}-${index}`}>
-                  <Link to={`/${data.id}`}>{data.name}</Link>
+                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
                 </li>
               );
             })}
@@ -110,7 +110,7 @@ class CharacterList extends Component {
             {dArray.map((data, index) => {
               return (
                 <li key={`${data.id}-${index}`}>
-                  <Link to={`/${data.id}`}>{data.name}</Link>
+                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
                 </li>
               );
             })}
@@ -120,7 +120,7 @@ class CharacterList extends Component {
             {eArray.map((data, index) => {
               return (
                 <li key={`${data.id}-${index}`}>
-                  <Link to={`/${data.id}`}>{data.name}</Link>
+                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
                 </li>
               );
             })}
@@ -130,7 +130,7 @@ class CharacterList extends Component {
             {fArray.map((data, index) => {
               return (
                 <li key={`${data.id}-${index}`}>
-                  <Link to={`/${data.id}`}>{data.name}</Link>
+                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
                 </li>
               );
             })}
@@ -140,7 +140,7 @@ class CharacterList extends Component {
             {gArray.map((data, index) => {
               return (
                 <li key={`${data.id}-${index}`}>
-                  <Link to={`/${data.id}`}>{data.name}</Link>
+                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
                 </li>
               );
             })}
@@ -150,7 +150,7 @@ class CharacterList extends Component {
             {hArray.map((data, index) => {
               return (
                 <li key={`${data.id}-${index}`}>
-                  <Link to={`/${data.id}`}>{data.name}</Link>
+                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
                 </li>
               );
             })}
@@ -160,7 +160,7 @@ class CharacterList extends Component {
             {iArray.map((data, index) => {
               return (
                 <li key={`${data.id}-${index}`}>
-                  <Link to={`/${data.id}`}>{data.name}</Link>
+                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
                 </li>
               );
             })}
@@ -170,7 +170,7 @@ class CharacterList extends Component {
             {jArray.map((data, index) => {
               return (
                 <li key={`${data.id}-${index}`}>
-                  <Link to={`/${data.id}`}>{data.name}</Link>
+                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
                 </li>
               );
             })}
@@ -180,7 +180,7 @@ class CharacterList extends Component {
             {kArray.map((data, index) => {
               return (
                 <li key={`${data.id}-${index}`}>
-                  <Link to={`/${data.id}`}>{data.name}</Link>
+                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
                 </li>
               );
             })}
@@ -190,7 +190,7 @@ class CharacterList extends Component {
             {lArray.map((data, index) => {
               return (
                 <li key={`${data.id}-${index}`}>
-                  <Link to={`/${data.id}`}>{data.name}</Link>
+                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
                 </li>
               );
             })}
@@ -200,7 +200,7 @@ class CharacterList extends Component {
             {mArray.map((data, index) => {
               return (
                 <li key={`${data.id}-${index}`}>
-                  <Link to={`/${data.id}`}>{data.name}</Link>
+                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
                 </li>
               );
             })}
@@ -210,7 +210,7 @@ class CharacterList extends Component {
             {nArray.map((data, index) => {
               return (
                 <li key={`${data.id}-${index}`}>
-                  <Link to={`/${data.id}`}>{data.name}</Link>
+                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
                 </li>
               );
             })}
@@ -220,7 +220,7 @@ class CharacterList extends Component {
             {oArray.map((data, index) => {
               return (
                 <li key={`${data.id}-${index}`}>
-                  <Link to={`/${data.id}`}>{data.name}</Link>
+                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
                 </li>
               );
             })}
@@ -230,7 +230,7 @@ class CharacterList extends Component {
             {pArray.map((data, index) => {
               return (
                 <li key={`${data.id}-${index}`}>
-                  <Link to={`/${data.id}`}>{data.name}</Link>
+                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
                 </li>
               );
             })}
@@ -240,7 +240,7 @@ class CharacterList extends Component {
             {qArray.map((data, index) => {
               return (
                 <li key={`${data.id}-${index}`}>
-                  <Link to={`/${data.id}`}>{data.name}</Link>
+                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
                 </li>
               );
             })}
@@ -250,7 +250,7 @@ class CharacterList extends Component {
             {rArray.map((data, index) => {
               return (
                 <li key={`${data.id}-${index}`}>
-                  <Link to={`/${data.id}`}>{data.name}</Link>
+                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
                 </li>
               );
             })}
@@ -260,7 +260,7 @@ class CharacterList extends Component {
             {sArray.map((data, index) => {
               return (
                 <li key={`${data.id}-${index}`}>
-                  <Link to={`/${data.id}`}>{data.name}</Link>
+                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
                 </li>
               );
             })}
@@ -270,7 +270,7 @@ class CharacterList extends Component {
             {tArray.map((data, index) => {
               return (
                 <li key={`${data.id}-${index}`}>
-                  <Link to={`/${data.id}`}>{data.name}</Link>
+                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
                 </li>
               );
             })}
@@ -280,7 +280,7 @@ class CharacterList extends Component {
             {uArray.map((data, index) => {
               return (
                 <li key={`${data.id}-${index}`}>
-                  <Link to={`/${data.id}`}>{data.name}</Link>
+                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
                 </li>
               );
             })}
@@ -290,7 +290,7 @@ class CharacterList extends Component {
             {vArray.map((data, index) => {
               return (
                 <li key={`${data.id}-${index}`}>
-                  <Link to={`/${data.id}`}>{data.name}</Link>
+                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
                 </li>
               );
             })}
@@ -300,7 +300,7 @@ class CharacterList extends Component {
             {wArray.map((data, index) => {
               return (
                 <li key={`${data.id}-${index}`}>
-                  <Link to={`/${data.id}`}>{data.name}</Link>
+                  <Link to={`/charactesr/${data.id}`}>{data.name}</Link>
                 </li>
               );
             })}
@@ -310,7 +310,7 @@ class CharacterList extends Component {
             {xArray.map((data, index) => {
               return (
                 <li key={`${data.id}-${index}`}>
-                  <Link to={`/${data.id}`}>{data.name}</Link>
+                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
                 </li>
               );
             })}
@@ -320,7 +320,7 @@ class CharacterList extends Component {
             {yArray.map((data, index) => {
               return (
                 <li key={`${data.id}-${index}`}>
-                  <Link to={`/${data.id}`}>{data.name}</Link>
+                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
                 </li>
               );
             })}
@@ -330,7 +330,7 @@ class CharacterList extends Component {
             {zArray.map((data, index) => {
               return (
                 <li key={`${data.id}-${index}`}>
-                  <Link to={`/${data.id}`}>{data.name}</Link>
+                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
                 </li>
               );
             })}
@@ -340,7 +340,7 @@ class CharacterList extends Component {
             {numArray.map((data, index) => {
               return (
                 <li key={`${data.id}-${index}`}>
-                  <Link to={`/${data.id}`}>{data.name}</Link>
+                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
                 </li>
               );
             })}
