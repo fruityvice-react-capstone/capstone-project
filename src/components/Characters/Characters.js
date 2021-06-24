@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./Characters.css";
+import { withRouter } from "react-router-dom";
 
 class Characters extends Component {
   constructor(props) {
@@ -13,6 +14,7 @@ class Characters extends Component {
         gender: "",
         origin: { name: "" },
       },
+
       // origin: {name: ""},
     };
   }
@@ -61,4 +63,4 @@ class Characters extends Component {
   }
 }
 
-export default Characters;
+export default withRouter(Characters);

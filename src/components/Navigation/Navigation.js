@@ -10,13 +10,14 @@ class Navigation extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      number: "",
+      selectedId: 1,
     };
   }
   handleClick = () => {
     this.setState({
-      number: this.randomNumber(),
+      selectedId: this.randomNumber(),
     });
+    window.location = `/characters/${this.randomNumber()}`;
   };
   randomNumber() {
     const min = 1;
@@ -48,7 +49,7 @@ class Navigation extends Component {
                 onClick={this.handleClick}
                 className="li-link-color"
                 component={Link}
-                to={`/characters/${this.state.number}`}
+                to={`/characters/${this.state.selectedId}`}
               >
                 Random Character
               </Button>
