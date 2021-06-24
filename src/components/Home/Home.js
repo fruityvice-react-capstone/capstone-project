@@ -87,7 +87,7 @@ class Home extends Component {
     // })
     return (
       <div>
-        <Carousel>
+        <Carousel fade>
           <Carousel.Item>
             <img
               className="d-block w-100"
@@ -95,7 +95,8 @@ class Home extends Component {
               alt="First slide"
             />
             <Carousel.Caption>
-              <Link to="/characters/1" className="linkColorClass">
+              <img src="/images/rick2.jpg" alt="rick" />
+              <Link to="/characters/1" gitclassName="linkColorClass">
                 {rickSanchez}
               </Link>
               <p className="quoteColorClass">
