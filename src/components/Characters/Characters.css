@@ -1,0 +1,18 @@
+.character-bio {
+  text-align: center;
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(13, 48, 163, 0.747),
+    rgb(167, 255, 34)
+  );
+  height: 700px;
+}
+.bio-pic {
+  border-radius: 10px;
+}
+.specs-font {
+    font-size: 24px;
+}
+.spec-detail-font {
+    font-size: 20px;
+}

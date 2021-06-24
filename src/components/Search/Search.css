@@ -1,0 +1,28 @@
+.heading-color {
+  color: black;
+}
+.text-color {
+  color: black;
+}
+.header-background {
+  background-color: rgba(172, 255, 47, 0.507);
+  border-radius: 15px;
+  margin-top: 20px;
+  padding-top: 5px;
+}
+/* .head-background {
+      background-color: greenyellow;
+} */
+.background-image {
+  background-image: url("/src/components/Search/images/8eede4dee4778ac6dd8fe4813c7a788d.png");
+  background-size: cover;
+  height: 800px;
+  width: 600px;
+}
+.list-style {
+  display: block;
+}
+.li-link-color {
+  color: black;
+  font-weight: bold;
+}
