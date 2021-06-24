@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import { Carousel } from "react-bootstrap";
 import { Card, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import "./Home.css";
 
 class Home extends Component {
   constructor(props) {
@@ -40,16 +41,7 @@ class Home extends Component {
         console.log("this is an element", element.image);
         return (
           <div>
-            {/* <Figure>
-              <Figure.Image
-                width={171}
-                height={180}
-                alt="171x180"
-                src={element.image}
-              />
-              <Figure.Caption>{element.name}</Figure.Caption>
-            </Figure> */}
-            <img src={element.image} alt="Morty Smith" />
+            <h1>{element.name}</h1>
           </div>
         );
       }
@@ -99,79 +91,78 @@ class Home extends Component {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="/images/ntcywUtfIcq3_gMOJk_tQh3Ior3oFARLga_64nlBUfs.png"
+              src="/images/carousel-wide-mirror.png"
               alt="First slide"
             />
             <Carousel.Caption>
-              <Link to="/characters">{rickSanchez}</Link>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            {" "}
-            <img
-              className="d-block w-100"
-              src="/images/ntcywUtfIcq3_gMOJk_tQh3Ior3oFARLga_64nlBUfs.png"
-              alt="Second slide"
-            />
-            {/* card item */}{" "}
-            <Card style={{ width: "18rem" }}>
-              <Card.Img variant="top" src={mortySmith} />
-              <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-              </Card.Body>
-            </Card>
-            {/* end card item */}
-            <Carousel.Caption>
-              {/* <h3>{mortySmith}</h3> */}
-
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="/images/ntcywUtfIcq3_gMOJk_tQh3Ior3oFARLga_64nlBUfs.png"
-              alt="Third slide"
-            />
-
-            <Carousel.Caption>
-              <h3>{summerSmith}</h3>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              <Link to="/characters/1" className="linkColorClass">
+                {rickSanchez}
+              </Link>
+              <p className="quoteColorClass">
+                “Can somebody just let me out of here? If I die in a cage I lose
+                a bet.”
               </p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="/images/ntcywUtfIcq3_gMOJk_tQh3Ior3oFARLga_64nlBUfs.png"
-              alt="Third slide"
+              src="/images/carousel-wide-mirror.png"
+              alt="First slide"
             />
-
             <Carousel.Caption>
-              <h3>{bethSmith}</h3>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              <Link to="/characters/2" className="linkColorClass">
+                {mortySmith}
+              </Link>
+              <p className="quoteColorClass">
+                “Nobody exists on purpose, nobody belongs anywhere, everybody's
+                gonna die. Come watch TV.”
               </p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="/images/ntcywUtfIcq3_gMOJk_tQh3Ior3oFARLga_64nlBUfs.png"
+              src="/images/carousel-wide-mirror.png"
               alt="Third slide"
             />
 
             <Carousel.Caption>
-              <h3>{jerrySmith}</h3>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              <Link to="/characters/3" className="linkColorClass">
+                {summerSmith}
+              </Link>
+              <p className="quoteColorClass">
+                “Camping is just being homeless without the change.”
+              </p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src="/images/carousel-wide-mirror.png"
+              alt="Third slide"
+            />
+
+            <Carousel.Caption>
+              <Link to="/characters/4" className="linkColorClass">
+                {bethSmith}
+              </Link>
+              <p className="quoteColorClass">"Am I evil?"</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src="/images/carousel-wide-mirror.png"
+              alt="Third slide"
+            />
+
+            <Carousel.Caption>
+              <Link to="/characters/5" className="linkColorClass">
+                {jerrySmith}
+              </Link>
+              <p className="quoteColorClass">
+                "If the shoe fits, buy it in every color."
               </p>
             </Carousel.Caption>
           </Carousel.Item>

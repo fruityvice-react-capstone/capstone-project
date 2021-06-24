@@ -5,8 +5,8 @@ import Navigation from "../Navigation/Navigation";
 // import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import Jumbotron from "react-bootstrap/Jumbotron";
-
 import "./Header.css";
+
 class Header extends Component {
   render() {
     return (
