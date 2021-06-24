@@ -8,8 +8,6 @@ body {
   text-align: left;
   list-style-type: none;
   padding: 5px;
-  /* display: flex;
-  flex-direction: column; */
 }
 .characterContainer ul {
   max-width: 100%;
@@ -23,10 +21,6 @@ body {
   margin-right: 40px;
   padding: 15px;
 }
-/* .aContainer {
-  display: block;
-  box-sizing: border-box;
-} */
 .characterContainer ul span {
   font-size: x-large;
 }

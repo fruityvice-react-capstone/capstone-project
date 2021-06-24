@@ -6,8 +6,6 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "./Navigation.css";
 
-import { Navbar, Nav, NavDropdown, Form, FormControl } from "react-bootstrap";
-
 class Navigation extends Component {
   randomNumber() {
     const min = 1;
@@ -37,9 +35,7 @@ class Navigation extends Component {
             </Col>
             <Col>
               <Button
-
                 className="li-link-color"
-
                 component={Link}
                 to={`/characters/${this.randomNumber()}`}
               >
