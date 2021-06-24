@@ -5,6 +5,8 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 
+// import background from "./images/istockphoto-479423528-170667a.jpg";
+
 class Search extends Component {
   constructor(props) {
     super(props);
@@ -93,40 +95,38 @@ class Search extends Component {
     );
 
     return (
-      <Container fluid class="background">
-        <div>
+      <Container fluid className="background-image">
+        <div className="header-background">
           <Row>
-            <Col xs="auto"></Col>
-            <Col xs="auto"></Col>
             <Col xs="auto"></Col>
             <Col>
               <Form onSubmit={this.handleNameSubmit}>
                 <h2 class="heading-color">Search by Name:</h2>
-                <Form.Label>Enter Character Name: </Form.Label>
+                <Form.Label class="text-color">
+                  Enter Character Name:{" "}
+                </Form.Label>
                 <input type="text" onChange={this.handleNameChange}></input>
-                <input class="center" type="submit"></input>
+                <input type="submit"></input>
               </Form>
-              <ul class="center">{resultsItems}</ul>
+              <ul>{resultsItems}</ul>
             </Col>
-            <Col xs="auto"></Col>
             <Col>
               <Form onSubmit={this.handleSpeciesSubmit}>
                 <h2 class="heading-color">Search by Species:</h2>
-                <label htmlFor="species">Enter Species: </label>
+                <Form.Label class="text-color">Enter Species: </Form.Label>
                 <input type="text" onChange={this.handleSpeciesChange}></input>
                 <input class="center" type="submit"></input>
               </Form>
               <ul>{speciesResultsItems}</ul>
             </Col>
-            <Col xs="auto"></Col>
             <Col>
               <Form onSubmit={this.handleStatusSubmit}>
                 <h2 class="heading-color">Search by Status:</h2>
-                <label htmlFor="status">Enter Status: </label>
+                <Form.Label class="text-color">Enter Status: </Form.Label>
                 <input type="text" onChange={this.handleStatusChange}></input>
                 <input class="center" type="submit"></input>
+                <ul>{statusResultsItems}</ul>
               </Form>
-              <ul>{statusResultsItems}</ul>
             </Col>
           </Row>
         </div>

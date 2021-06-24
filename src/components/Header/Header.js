@@ -7,18 +7,15 @@ import Jumbotron from "react-bootstrap/Jumbotron";
 class Header extends Component {
   render() {
     return (
-      <div>
+      <div className="head-background">
         <Jumbotron fluid>
           <Container>
-                <div className="headerImage">
-                  <Image src="/images/rick-and-morty-logo.png" fluid />
-                </div>
+            <div className="headerImage">
+              <Image src="/images/rick-and-morty-logo.png" fluid />
+            </div>
           </Container>
         </Jumbotron>
       </div>
-
-
-
     );
   }
 }
