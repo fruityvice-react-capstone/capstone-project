@@ -1,5 +1,12 @@
-.Navigation-container {
+/* .Navigation-container {
   color: #ffffff;
-  background-color: #ffffff !important;
-  margin-bottom: 0px;
+  background-color: #ffffff;
+  margin-bottom: 5px;
+} */
+.randomBtn {
+  color: 0275d8 !important;
+}
+.li-link-color {
+  color: black;
+  font-weight: bold;
 }

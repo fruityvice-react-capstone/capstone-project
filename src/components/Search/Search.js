@@ -1,8 +1,14 @@
 import React, { Component } from "react";
+import "./Search.css";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Form from "react-bootstrap/Form";
+import { Link } from "react-router-dom";
+
+// import background from "./images/istockphoto-479423528-170667a.jpg";
 
 class Search extends Component {
-
-
   constructor(props) {
     super(props);
 
@@ -74,48 +80,89 @@ class Search extends Component {
 
   render() {
     const resultsItems = this.state.results.map((results, index) => {
-      return <li key={`${results.name}-${index}`}>{results.name}</li>;
+      return (
+        <li key={`${results.name}-${index}`}>
+          <Link className="li-link-color" to={`/characters/${results.id}`}>
+            {results.name}
+          </Link>
+        </li>
+      );
     });
 
     const speciesResultsItems = this.state.speciesResults.map(
       (results, index) => {
-        return <li key={`${results.name}-${index}`}>{results.name}</li>;
+        return (
+          <li key={`${results.name}-${index}`}>
+            {" "}
+            <Link className="li-link-color" to={`/characters/${results.id}`}>
+              {results.name}
+            </Link>
+          </li>
+        );
       }
     );
 
     const statusResultsItems = this.state.statusResults.map(
       (results, index) => {
-        return <li key={`${results.name}-${index}`}>{results.name}</li>;
+        return (
+          <li key={`${results.name}-${index}`}>
+            <Link className="li-link-color" to={`/characters/${results.id}`}>
+              {results.name}
+            </Link>
+          </li>
+        );
       }
     );
 
     return (
-      <div>
-        <form onSubmit={this.handleNameSubmit}>
-          <h2>Search by Name:</h2>
-          <label htmlFor="name">Enter Character Name: </label>
-          <input type="text" onChange={this.handleNameChange}></input>
-          <input type="submit"></input>
-        </form>
-        <ul>{resultsItems}</ul>
-
-        <form onSubmit={this.handleSpeciesSubmit}>
-          <h2>Search by Species:</h2>
-          <label htmlFor="species">Enter Species: </label>
-          <input type="text" onChange={this.handleSpeciesChange}></input>
-          <input type="submit"></input>
-        </form>
-        <ul>{speciesResultsItems}</ul>
-
-        <form onSubmit={this.handleStatusSubmit}>
-          <h2>Search by Status:</h2>
-          <label htmlFor="status">Enter Status: </label>
-          <input type="text" onChange={this.handleStatusChange}></input>
-          <input type="submit"></input>
-        </form>
-        <ul>{statusResultsItems}</ul>
-
-      </div>
+      <Container fluid className="background-image">
+        <div className="header-background">
+          <Row>
+            <Col xs="auto"></Col>
+            <Col>
+              <Form onSubmit={this.handleNameSubmit}>
+                <h2 class="heading-color">Search by Name:</h2>
+                <Form.Label class="text-color">
+                  Enter Character Name:{" "}
+                </Form.Label>
+                <input
+                  type="text"
+                  onChange={this.handleNameChange}
+                  required
+                ></input>
+                <input type="submit"></input>
+              </Form>
+              <ul className="list-style">{resultsItems}</ul>
+            </Col>
+            <Col>
+              <Form onSubmit={this.handleSpeciesSubmit}>
+                <h2 class="heading-color">Search by Species:</h2>
+                <Form.Label class="text-color">Enter Species: </Form.Label>
+                <input
+                  type="text"
+                  onChange={this.handleSpeciesChange}
+                  required
+                ></input>
+                <input class="center" type="submit"></input>
+              </Form>
+              <ul className="list-style">{speciesResultsItems}</ul>
+            </Col>
+            <Col>
+              <Form onSubmit={this.handleStatusSubmit}>
+                <h2 class="heading-color">Search by Status:</h2>
+                <Form.Label class="text-color">Enter Status: </Form.Label>
+                <input
+                  type="text"
+                  onChange={this.handleStatusChange}
+                  required
+                ></input>
+                <input class="center" type="submit"></input>
+                <ul className="list-style">{statusResultsItems}</ul>
+              </Form>
+            </Col>
+          </Row>
+        </div>
+      </Container>
     );
   }
 }

@@ -4,6 +4,7 @@ import Button from "@material-ui/core/Button";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import "./Navigation.css";
 
 import { Navbar, Nav, NavDropdown, Form, FormControl } from "react-bootstrap";
 
@@ -20,20 +21,29 @@ class Navigation extends Component {
         <Container fluid>
           <Row>
             <Col>
-              <Link to="/">Home</Link>
+              <Link className="li-link-color" to="/">
+                Home
+              </Link>
             </Col>
             <Col>
-              <Link to="/characters">Characters</Link>
+              <Link className="li-link-color" to="/characters">
+                Characters
+              </Link>
             </Col>
             <Col>
-              <Link to="/search">Search</Link>
+              <Link className="li-link-color" to="/search">
+                Search
+              </Link>
             </Col>
             <Col>
               <Button
+
+                className="li-link-color"
+
                 component={Link}
                 to={`/characters/${this.randomNumber()}`}
               >
-                Random Character
+                <p>Random Character</p>
               </Button>
             </Col>
           </Row>
