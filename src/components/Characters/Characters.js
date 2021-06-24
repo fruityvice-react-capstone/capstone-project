@@ -21,12 +21,13 @@ class Characters extends Component {
     fetch(`https://rickandmortyapi.com/api/character/${selectedId}`)
       .then((response) => response.json())
       .then((data) => {
-        console.log("character bio", data);
+        // console.log("character bio", data);
         this.setState({
           characters: data,
           // origin: data.origin,
         });
-      });
+      })
+      .catch((error) => console.log(error));
   }
   render() {
     return (

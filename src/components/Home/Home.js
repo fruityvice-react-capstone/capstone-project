@@ -17,10 +17,11 @@ class Home extends Component {
     fetch("https://rickandmortyapi.com/api/character")
       .then((response) => response.json())
       .then((data) => {
-        console.log("this is data from home api", data);
+        // console.log("this is data from home api", data);
         this.setState({ allCharacters: data.results });
-        console.log("this is all chracters", this.state.allCharacters);
-      });
+        // console.log("this is all chracters", this.state.allCharacters);
+      })
+      .catch((error) => console.log(error));
   }
 
   render() {
@@ -38,7 +39,7 @@ class Home extends Component {
 
     let mortySmith = this.state.allCharacters.map((element) => {
       if (element.name === "Morty Smith") {
-        console.log("this is an element", element.image);
+        // console.log("this is an element", element.image);
         return (
           <div>
             <h1>{element.name}</h1>
@@ -95,7 +96,9 @@ class Home extends Component {
               alt="First slide"
             />
             <Carousel.Caption>
-              <img src="/images/rick2.jpg" alt="rick" />
+
+              <img src="/images/rick5.jpg" alt="rick" />
+
               <Link to="/characters/1" gitclassName="linkColorClass">
                 {rickSanchez}
               </Link>
@@ -112,6 +115,7 @@ class Home extends Component {
               alt="First slide"
             />
             <Carousel.Caption>
+              <img src="/images/morty2.jpg" alt="morty" />
               <Link to="/characters/2" className="linkColorClass">
                 {mortySmith}
               </Link>
@@ -129,6 +133,9 @@ class Home extends Component {
             />
 
             <Carousel.Caption>
+
+              <img src="/images/summer2.png" alt="beth" />
+
               <Link to="/characters/3" className="linkColorClass">
                 {summerSmith}
               </Link>
@@ -145,10 +152,15 @@ class Home extends Component {
             />
 
             <Carousel.Caption>
+
+              <img src="/images/beth3.png" alt="beth" />
               <Link to="/characters/4" className="linkColorClass">
                 {bethSmith}
               </Link>
-              <p className="quoteColorClass">"Am I evil?"</p>
+              <p className="quoteColorClass">
+                "I'm sorry you feel you deserve an apology."
+              </p>
+
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -157,8 +169,9 @@ class Home extends Component {
               src="/images/carousel-wide-mirror.png"
               alt="Third slide"
             />
-
             <Carousel.Caption>
+              <img src="/images/jerry3.png" alt="beth" />
+
               <Link to="/characters/5" className="linkColorClass">
                 {jerrySmith}
               </Link>

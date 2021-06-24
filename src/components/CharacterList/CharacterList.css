@@ -2,7 +2,13 @@ body {
   display: block;
   scroll-behavior: smooth;
 }
-
+.characterContainer {
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(255, 0, 200, 0.616),
+    rgb(158, 253, 16)
+  );
+}
 .characterContainer li {
   justify-self: flex-start;
   text-align: left;
@@ -24,3 +30,10 @@ body {
 .characterContainer ul span {
   font-size: x-large;
 }
+.li-link-color {
+  color: black;
+  font-weight: 400;
+}
+/* .category-letter {
+  font-size: 200;
+} */
