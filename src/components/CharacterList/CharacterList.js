@@ -75,30 +75,26 @@ class CharacterList extends Component {
 
     return (
       <div className="characterContainer">
-        <div>
-          <ul className="aContainer">
-            <span>A</span>
-            {aArray.map((data, index) => {
-              return (
-                <li key={`${data.id}-${index}`} className="aContainer">
-                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <span>B</span>
-            {bArray.map((data, index) => {
-              return (
-                <li key={`${data.id}-${index}`}>
-                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
+        <ul className="aContainer">
+          <span>A</span>
+          {aArray.map((data, index) => {
+            return (
+              <li key={`${data.id}-${index}`} className="aContainer">
+                <Link to={`/characters/${data.id}`}>{data.name}</Link>
+              </li>
+            );
+          })}
+        </ul>
+        <ul>
+          <span>B</span>
+          {bArray.map((data, index) => {
+            return (
+              <li key={`${data.id}-${index}`}>
+                <Link to={`/characters/${data.id}`}>{data.name}</Link>
+              </li>
+            );
+          })}
+        </ul>
         <ul>
           <span>C</span>
           {cArray.map((data, index) => {
@@ -304,7 +300,7 @@ class CharacterList extends Component {
           {wArray.map((data, index) => {
             return (
               <li key={`${data.id}-${index}`}>
-                <Link to={`/charactesr/${data.id}`}>{data.name}</Link>
+                <Link to={`/characters/${data.id}`}>{data.name}</Link>
               </li>
             );
           })}
