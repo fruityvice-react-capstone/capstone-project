@@ -1,5 +1,7 @@
 # Welcome to our Rick and Morty Site!
 
+Vist us at [Our Site](https://rick-and-morty-react-capstone.herokuapp.com/)
+
 Created by Joyce Young, Johanny Clase, and Daniel de la Huerta
 
 ## Here's what our page is about:
