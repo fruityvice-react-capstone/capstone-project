@@ -22,9 +22,9 @@ Use the command: `git clone <your-gitHub-repo>`
 
 **Note: Node.js is required to run these commands!**
 
-Node Modules from Create React App: `npm install`
-React Router: `npm install react-router-dom`
-React Bootstrap: `npm install react-bootstrap bootstrap@4.6.0`
+Node Modules from Create React App: `npm install`\
+React Router: `npm install react-router-dom`\
+React Bootstrap: `npm install react-bootstrap bootstrap@4.6.0`\
 Material UI: `npm install @material-ui/core`
 
 ### Run the app!
