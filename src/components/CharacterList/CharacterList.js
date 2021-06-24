@@ -44,7 +44,7 @@ class CharacterList extends Component {
   }
   render() {
     jsonData.sort(this.dynamicSort("name"));
-    console.log(jsonData);
+    // console.log(jsonData);
     let aArray = jsonData.filter((data) => data.name.startsWith("A"));
     let bArray = jsonData.filter((data) => data.name.startsWith("B"));
     let cArray = jsonData.filter((data) => data.name.startsWith("C"));
