@@ -5,7 +5,7 @@
   color: black;
 }
 .header-background {
-  background-color: greenyellow;
+  background-color: rgba(172, 255, 47, 0.507);
   border-radius: 15px;
   margin-top: 20px;
   padding-top: 5px;
@@ -14,8 +14,15 @@
       background-color: greenyellow;
 } */
 .background-image {
-  background-image: url("/src/components/Search/images/ntcywUtfIcq3_gMOJk_tQh3Ior3oFARLga_64nlBUfs.png");
+  background-image: url("/src/components/Search/images/8eede4dee4778ac6dd8fe4813c7a788d.png");
   background-size: cover;
-  height: 600px;
+  height: 800px;
   width: 600px;
+}
+.list-style {
+  display: block;
+}
+.li-link-color {
+  color: black;
+  font-weight: bold;
 }

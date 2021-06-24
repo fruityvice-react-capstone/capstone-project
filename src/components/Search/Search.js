@@ -4,6 +4,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
+import { Link } from "react-router-dom";
 
 // import background from "./images/istockphoto-479423528-170667a.jpg";
 
@@ -79,18 +80,37 @@ class Search extends Component {
 
   render() {
     const resultsItems = this.state.results.map((results, index) => {
-      return <li key={`${results.name}-${index}`}>{results.name}</li>;
+      return (
+        <li key={`${results.name}-${index}`}>
+          <Link className="li-link-color" to={`/characters/${results.id}`}>
+            {results.name}
+          </Link>
+        </li>
+      );
     });
 
     const speciesResultsItems = this.state.speciesResults.map(
       (results, index) => {
-        return <li key={`${results.name}-${index}`}>{results.name}</li>;
+        return (
+          <li key={`${results.name}-${index}`}>
+            {" "}
+            <Link className="li-link-color" to={`/characters/${results.id}`}>
+              {results.name}
+            </Link>
+          </li>
+        );
       }
     );
 
     const statusResultsItems = this.state.statusResults.map(
       (results, index) => {
-        return <li key={`${results.name}-${index}`}>{results.name}</li>;
+        return (
+          <li key={`${results.name}-${index}`}>
+            <Link className="li-link-color" to={`/characters/${results.id}`}>
+              {results.name}
+            </Link>
+          </li>
+        );
       }
     );
 
@@ -105,27 +125,39 @@ class Search extends Component {
                 <Form.Label class="text-color">
                   Enter Character Name:{" "}
                 </Form.Label>
-                <input type="text" onChange={this.handleNameChange}></input>
+                <input
+                  type="text"
+                  onChange={this.handleNameChange}
+                  required
+                ></input>
                 <input type="submit"></input>
               </Form>
-              <ul>{resultsItems}</ul>
+              <ul className="list-style">{resultsItems}</ul>
             </Col>
             <Col>
               <Form onSubmit={this.handleSpeciesSubmit}>
                 <h2 class="heading-color">Search by Species:</h2>
                 <Form.Label class="text-color">Enter Species: </Form.Label>
-                <input type="text" onChange={this.handleSpeciesChange}></input>
+                <input
+                  type="text"
+                  onChange={this.handleSpeciesChange}
+                  required
+                ></input>
                 <input class="center" type="submit"></input>
               </Form>
-              <ul>{speciesResultsItems}</ul>
+              <ul className="list-style">{speciesResultsItems}</ul>
             </Col>
             <Col>
               <Form onSubmit={this.handleStatusSubmit}>
                 <h2 class="heading-color">Search by Status:</h2>
                 <Form.Label class="text-color">Enter Status: </Form.Label>
-                <input type="text" onChange={this.handleStatusChange}></input>
+                <input
+                  type="text"
+                  onChange={this.handleStatusChange}
+                  required
+                ></input>
                 <input class="center" type="submit"></input>
-                <ul>{statusResultsItems}</ul>
+                <ul className="list-style">{statusResultsItems}</ul>
               </Form>
             </Col>
           </Row>
