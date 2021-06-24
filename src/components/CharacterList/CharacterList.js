@@ -75,7 +75,6 @@ class CharacterList extends Component {
 
     return (
       <div className="characterContainer">
-        <div>
           <ul className="aContainer">
             <h1>A</h1>
             {aArray.map((data, index) => {
@@ -86,8 +85,7 @@ class CharacterList extends Component {
               );
             })}
           </ul>
-        </div>
-        <div>
+
           <ul>
             <h1>B</h1>
             {bArray.map((data, index) => {
@@ -98,7 +96,8 @@ class CharacterList extends Component {
               );
             })}
           </ul>
-        </div>
+
+n
         <ul>
           <h1>C</h1>
           {cArray.map((data, index) => {
@@ -304,7 +303,9 @@ class CharacterList extends Component {
           {wArray.map((data, index) => {
             return (
               <li key={`${data.id}-${index}`}>
+
                 <Link className="li-link-color" to={`/charactesr/${data.id}`}>{data.name}</Link>
+
               </li>
             );
           })}

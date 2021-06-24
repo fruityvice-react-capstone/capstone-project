@@ -96,7 +96,9 @@ class Home extends Component {
               alt="First slide"
             />
             <Carousel.Caption>
-              <img src="/images/rick2.jpg" alt="rick" />
+
+              <img src="/images/rick5.jpg" alt="rick" />
+
               <Link to="/characters/1" gitclassName="linkColorClass">
                 {rickSanchez}
               </Link>
@@ -113,6 +115,7 @@ class Home extends Component {
               alt="First slide"
             />
             <Carousel.Caption>
+              <img src="/images/morty2.jpg" alt="morty" />
               <Link to="/characters/2" className="linkColorClass">
                 {mortySmith}
               </Link>
@@ -130,6 +133,9 @@ class Home extends Component {
             />
 
             <Carousel.Caption>
+
+              <img src="/images/summer2.png" alt="beth" />
+
               <Link to="/characters/3" className="linkColorClass">
                 {summerSmith}
               </Link>
@@ -146,10 +152,15 @@ class Home extends Component {
             />
 
             <Carousel.Caption>
+
+              <img src="/images/beth3.png" alt="beth" />
               <Link to="/characters/4" className="linkColorClass">
                 {bethSmith}
               </Link>
-              <p className="quoteColorClass">"Am I evil?"</p>
+              <p className="quoteColorClass">
+                "I'm sorry you feel you deserve an apology."
+              </p>
+
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -158,8 +169,9 @@ class Home extends Component {
               src="/images/carousel-wide-mirror.png"
               alt="Third slide"
             />
-
             <Carousel.Caption>
+              <img src="/images/jerry3.png" alt="beth" />
+
               <Link to="/characters/5" className="linkColorClass">
                 {jerrySmith}
               </Link>
