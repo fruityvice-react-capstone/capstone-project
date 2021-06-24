@@ -17,10 +17,11 @@ class Home extends Component {
     fetch("https://rickandmortyapi.com/api/character")
       .then((response) => response.json())
       .then((data) => {
-        console.log("this is data from home api", data);
+        // console.log("this is data from home api", data);
         this.setState({ allCharacters: data.results });
-        console.log("this is all chracters", this.state.allCharacters);
-      });
+        // console.log("this is all chracters", this.state.allCharacters);
+      })
+      .catch((error) => console.log(error));
   }
 
   render() {
@@ -38,7 +39,7 @@ class Home extends Component {
 
     let mortySmith = this.state.allCharacters.map((element) => {
       if (element.name === "Morty Smith") {
-        console.log("this is an element", element.image);
+        // console.log("this is an element", element.image);
         return (
           <div>
             <h1>{element.name}</h1>

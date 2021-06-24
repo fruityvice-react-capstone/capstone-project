@@ -33,11 +33,13 @@ class Search extends Component {
     fetch(`https://rickandmortyapi.com/api/character?name=${userInput}`)
       .then((response) => response.json())
       .then((data) => {
-        console.log("nameSubmit", data);
+        // console.log("nameSubmit", data);
         this.setState({
           results: data.results,
         });
-      });
+      })
+      .catch((error) => console.log(error));
+
   };
 
   handleSpeciesChange = (event) => {
@@ -52,11 +54,12 @@ class Search extends Component {
     fetch(`https://rickandmortyapi.com/api/character?species=${userInput}`)
       .then((response) => response.json())
       .then((data) => {
-        console.log("speciesSubmit", data);
+        // console.log("speciesSubmit", data);
         this.setState({
           speciesResults: data.results,
         });
-      });
+      })
+      .catch((error) => console.log(error));
   };
 
   handleStatusChange = (event) => {
@@ -71,11 +74,12 @@ class Search extends Component {
     fetch(`https://rickandmortyapi.com/api/character?status=${userInput}`)
       .then((response) => response.json())
       .then((data) => {
-        console.log("statusSubmit", data);
+        // console.log("statusSubmit", data);
         this.setState({
           statusResults: data.results,
         });
-      });
+      })
+      .catch((error) => console.log(error));
   };
 
   render() {
