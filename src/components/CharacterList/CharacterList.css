@@ -34,7 +34,7 @@ body {
   color: black;
   font-weight: 400;
 }
-h1 {
+.characterContainer h1 {
   width: max-content;
   padding-top: 20px;
   float: left;
