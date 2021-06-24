@@ -1,39 +1,40 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { withRouter } from "react-router";
+import Button from "@material-ui/core/Button";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import "./Navigation.css";
-import {
-  Navbar,
-  Nav,
-  NavDropdown,
-  Form,
-  FormControl,
-  Button,
-} from "react-bootstrap";
+
+import { Navbar, Nav, NavDropdown, Form, FormControl } from "react-bootstrap";
 
 class Navigation extends Component {
+  randomNumber() {
+    const min = 1;
+    const max = 671;
+    let randomNum = (Math.random() * (max - min) + min).toFixed(0);
+    return randomNum;
+  }
   render() {
     return (
       <div className="Navigation-container">
         <Container fluid>
           <Row>
             <Col>
-              {" "}
-              <Link to="/">Home</Link>{" "}
+              <Link to="/">Home</Link>
             </Col>
             <Col>
               <Link to="/characters">Characters</Link>
             </Col>
             <Col>
-              {" "}
-              <Link to="/search">Search</Link>{" "}
+              <Link to="/search">Search</Link>
             </Col>
             <Col>
-              {" "}
-              <Link to="/random">Random</Link>{" "}
+              <Button
+                component={Link}
+                to={`/characters/${this.randomNumber()}`}
+              >
+                Random Character
+              </Button>
             </Col>
           </Row>
         </Container>
@@ -42,4 +43,4 @@ class Navigation extends Component {
   }
 }
 
-export default withRouter(Navigation);
+export default Navigation;
