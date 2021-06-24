@@ -77,11 +77,11 @@ class CharacterList extends Component {
       <div className="characterContainer">
         <div>
           <ul className="aContainer">
-            <span>A</span>
+            <h1>A</h1>
             {aArray.map((data, index) => {
               return (
                 <li key={`${data.id}-${index}`} className="aContainer">
-                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
+                  <Link className="li-link-color" to={`/characters/${data.id}`}>{data.name}</Link>
                 </li>
               );
             })}
@@ -89,262 +89,262 @@ class CharacterList extends Component {
         </div>
         <div>
           <ul>
-            <span>B</span>
+            <h1>B</h1>
             {bArray.map((data, index) => {
               return (
                 <li key={`${data.id}-${index}`}>
-                  <Link to={`/characters/${data.id}`}>{data.name}</Link>
+                  <Link className="li-link-color" to={`/characters/${data.id}`}>{data.name}</Link>
                 </li>
               );
             })}
           </ul>
         </div>
         <ul>
-          <span>C</span>
+          <h1>C</h1>
           {cArray.map((data, index) => {
             return (
               <li key={`${data.id}-${index}`}>
-                <Link to={`/characters/${data.id}`}>{data.name}</Link>
+                <Link className="li-link-color" to={`/characters/${data.id}`}>{data.name}</Link>
               </li>
             );
           })}
         </ul>
         <ul>
-          <span>D</span>
+          <h1>D</h1>
           {dArray.map((data, index) => {
             return (
               <li key={`${data.id}-${index}`}>
-                <Link to={`/characters/${data.id}`}>{data.name}</Link>
+                <Link className="li-link-color" to={`/characters/${data.id}`}>{data.name}</Link>
               </li>
             );
           })}
         </ul>
         <ul>
-          <span>E</span>
+          <h1>E</h1>
           {eArray.map((data, index) => {
             return (
               <li key={`${data.id}-${index}`}>
-                <Link to={`/characters/${data.id}`}>{data.name}</Link>
+                <Link className="li-link-color" to={`/characters/${data.id}`}>{data.name}</Link>
               </li>
             );
           })}
         </ul>
         <ul>
-          <span>F</span>
+          <h1>F</h1>
           {fArray.map((data, index) => {
             return (
               <li key={`${data.id}-${index}`}>
-                <Link to={`/characters/${data.id}`}>{data.name}</Link>
+                <Link className="li-link-color" to={`/characters/${data.id}`}>{data.name}</Link>
               </li>
             );
           })}
         </ul>
         <ul>
-          <span>G</span>
+          <h1>G</h1>
           {gArray.map((data, index) => {
             return (
               <li key={`${data.id}-${index}`}>
-                <Link to={`/characters/${data.id}`}>{data.name}</Link>
+                <Link className="li-link-color" to={`/characters/${data.id}`}>{data.name}</Link>
               </li>
             );
           })}
         </ul>
         <ul>
-          <span>H</span>
+          <h1>H</h1>
           {hArray.map((data, index) => {
             return (
               <li key={`${data.id}-${index}`}>
-                <Link to={`/characters/${data.id}`}>{data.name}</Link>
+                <Link className="li-link-color" to={`/characters/${data.id}`}>{data.name}</Link>
               </li>
             );
           })}
         </ul>
         <ul>
-          <span>I</span>
+          <h1>I</h1>
           {iArray.map((data, index) => {
             return (
               <li key={`${data.id}-${index}`}>
-                <Link to={`/characters/${data.id}`}>{data.name}</Link>
+                <Link className="li-link-color" to={`/characters/${data.id}`}>{data.name}</Link>
               </li>
             );
           })}
         </ul>
         <ul>
-          <span>J</span>
+          <h1>J</h1>
           {jArray.map((data, index) => {
             return (
               <li key={`${data.id}-${index}`}>
-                <Link to={`/characters/${data.id}`}>{data.name}</Link>
+                <Link className="li-link-color" to={`/characters/${data.id}`}>{data.name}</Link>
               </li>
             );
           })}
         </ul>
         <ul>
-          <span>K</span>
+          <h1>K</h1>
           {kArray.map((data, index) => {
             return (
               <li key={`${data.id}-${index}`}>
-                <Link to={`/characters/${data.id}`}>{data.name}</Link>
+                <Link className="li-link-color" to={`/characters/${data.id}`}>{data.name}</Link>
               </li>
             );
           })}
         </ul>
         <ul>
-          <span>L</span>
+          <h1>L</h1>
           {lArray.map((data, index) => {
             return (
               <li key={`${data.id}-${index}`}>
-                <Link to={`/characters/${data.id}`}>{data.name}</Link>
+                <Link className="li-link-color" to={`/characters/${data.id}`}>{data.name}</Link>
               </li>
             );
           })}
         </ul>
         <ul>
-          <span>M</span>
+          <h1>M</h1>
           {mArray.map((data, index) => {
             return (
               <li key={`${data.id}-${index}`}>
-                <Link to={`/characters/${data.id}`}>{data.name}</Link>
+                <Link className="li-link-color" to={`/characters/${data.id}`}>{data.name}</Link>
               </li>
             );
           })}
         </ul>
         <ul>
-          <span>N</span>
+          <h1>N</h1>
           {nArray.map((data, index) => {
             return (
               <li key={`${data.id}-${index}`}>
-                <Link to={`/characters/${data.id}`}>{data.name}</Link>
+                <Link className="li-link-color" to={`/characters/${data.id}`}>{data.name}</Link>
               </li>
             );
           })}
         </ul>
         <ul>
-          <span>O</span>
+          <h1>O</h1>
           {oArray.map((data, index) => {
             return (
               <li key={`${data.id}-${index}`}>
-                <Link to={`/characters/${data.id}`}>{data.name}</Link>
+                <Link className="li-link-color" to={`/characters/${data.id}`}>{data.name}</Link>
               </li>
             );
           })}
         </ul>
         <ul>
-          <span>P</span>
+          <h1>P</h1>
           {pArray.map((data, index) => {
             return (
               <li key={`${data.id}-${index}`}>
-                <Link to={`/characters/${data.id}`}>{data.name}</Link>
+                <Link className="li-link-color" to={`/characters/${data.id}`}>{data.name}</Link>
               </li>
             );
           })}
         </ul>
         <ul>
-          <span>Q</span>
+          <h1>Q</h1>
           {qArray.map((data, index) => {
             return (
               <li key={`${data.id}-${index}`}>
-                <Link to={`/characters/${data.id}`}>{data.name}</Link>
+                <Link className="li-link-color" to={`/characters/${data.id}`}>{data.name}</Link>
               </li>
             );
           })}
         </ul>
         <ul>
-          <span>R</span>
+          <h1>R</h1>
           {rArray.map((data, index) => {
             return (
               <li key={`${data.id}-${index}`}>
-                <Link to={`/characters/${data.id}`}>{data.name}</Link>
+                <Link className="li-link-color" to={`/characters/${data.id}`}>{data.name}</Link>
               </li>
             );
           })}
         </ul>
         <ul>
-          <span>S</span>
+          <h1>S</h1>
           {sArray.map((data, index) => {
             return (
               <li key={`${data.id}-${index}`}>
-                <Link to={`/characters/${data.id}`}>{data.name}</Link>
+                <Link className="li-link-color" to={`/characters/${data.id}`}>{data.name}</Link>
               </li>
             );
           })}
         </ul>
         <ul>
-          <span>T</span>
+          <h1>T</h1>
           {tArray.map((data, index) => {
             return (
               <li key={`${data.id}-${index}`}>
-                <Link to={`/characters/${data.id}`}>{data.name}</Link>
+                <Link className="li-link-color" to={`/characters/${data.id}`}>{data.name}</Link>
               </li>
             );
           })}
         </ul>
         <ul>
-          <span>U</span>
+          <h1>U</h1>
           {uArray.map((data, index) => {
             return (
               <li key={`${data.id}-${index}`}>
-                <Link to={`/characters/${data.id}`}>{data.name}</Link>
+                <Link className="li-link-color" to={`/characters/${data.id}`}>{data.name}</Link>
               </li>
             );
           })}
         </ul>
         <ul>
-          <span>V</span>
+          <h1>V</h1>
           {vArray.map((data, index) => {
             return (
               <li key={`${data.id}-${index}`}>
-                <Link to={`/characters/${data.id}`}>{data.name}</Link>
+                <Link className="li-link-color" to={`/characters/${data.id}`}>{data.name}</Link>
               </li>
             );
           })}
         </ul>
         <ul>
-          <span>W</span>
+        <h1>W</h1>
           {wArray.map((data, index) => {
             return (
               <li key={`${data.id}-${index}`}>
-                <Link to={`/charactesr/${data.id}`}>{data.name}</Link>
+                <Link className="li-link-color" to={`/charactesr/${data.id}`}>{data.name}</Link>
               </li>
             );
           })}
         </ul>
         <ul>
-          <span>X</span>
+        <h1>X</h1>
           {xArray.map((data, index) => {
             return (
               <li key={`${data.id}-${index}`}>
-                <Link to={`/characters/${data.id}`}>{data.name}</Link>
+                <Link className="li-link-color" to={`/characters/${data.id}`}>{data.name}</Link>
               </li>
             );
           })}
         </ul>
         <ul>
-          <span>Y</span>
+        <h1>Y</h1>
           {yArray.map((data, index) => {
             return (
               <li key={`${data.id}-${index}`}>
-                <Link to={`/characters/${data.id}`}>{data.name}</Link>
+                <Link className="li-link-color" to={`/characters/${data.id}`}>{data.name}</Link>
               </li>
             );
           })}
         </ul>
         <ul>
-          <span>Z</span>
+          <h1>Z</h1>
           {zArray.map((data, index) => {
             return (
               <li key={`${data.id}-${index}`}>
-                <Link to={`/characters/${data.id}`}>{data.name}</Link>
+                <Link className="li-link-color" to={`/characters/${data.id}`}>{data.name}</Link>
               </li>
             );
           })}
         </ul>
         <ul>
-          <span>#</span>
+          <h1>#</h1>
           {numArray.map((data, index) => {
             return (
               <li key={`${data.id}-${index}`}>
-                <Link to={`/characters/${data.id}`}>{data.name}</Link>
+                <Link className="li-link-color" to={`/characters/${data.id}`}>{data.name}</Link>
               </li>
             );
           })}
