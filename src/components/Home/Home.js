@@ -11,6 +11,12 @@ class Home extends Component {
             fluid
           />
         </div>
+        <div className="homeImage">
+          <Image
+            src="/images/ntcywUtfIcq3_gMOJk_tQh3Ior3oFARLga_64nlBUfs.png"
+            fluid
+          />
+        </div>
       </div>
     );
   }

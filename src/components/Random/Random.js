@@ -1,45 +1,44 @@
-import React, { Component } from "react";
+//*used this to set up and test the different methods of getting our random button to run
 
-class Random extends Component {
-  constructor(props) {
-    super(props);
+// import React, { Component } from "react";
 
-    this.state = {
-      name: "",
-      species: "",
-      type: "",
-      status: "",
-    };
-  }
+// import { Link } from "react-router-dom";
+// import Button from "@material-ui/core/Button";
 
-  randomNumber = () => {
-    const min = 1;
-    const max = 671;
-    return (Math.random() * (max - min) + min).toFixed(0);
-  };
-  
-  componentDidMount() {
-    console.log("this is the componentDidMount");
+// class Random extends Component {
+//   // constructor(props) {
+//   //   super(props);
+//   //   this.state = {
+//   //     name: "",
+//   //     species: "",
+//   //     type: "",
+//   //     status: "",
+//   //   };
+//   // }
 
-    fetch(`https://rickandmortyapi.com/api/character/${this.randomNumber()}`)
-      .then((response) => response.json())
-      .then((data) => {
-        console.log("random character", data);
-      });
-  }
+//   randomNumber = () => {
+//     const min = 1;
+//     const max = 671;
+//     return (Math.random() * (max - min) + min).toFixed(0);
+//   };
 
-  render() {
-    return (
-      <div>
-        <h2>This is the Random Component!</h2>
-        <p>This will hold character image</p>
-        <p>Name</p>
-        <p>Species</p>
-        <p>Type</p>
-        <p>Status</p>
-      </div>
-    );
-  }
-}
+//   // componentDidMount() {
+//   //   fetch(`https://rickandmortyapi.com/api/character/${this.randomNumber()}`)
+//   //     .then((response) => response.json())
+//   //     .then((data) => {
+//   //       console.log("random character", data);
+//   //     });
+//   // }
 
-export default Random;
+//   render() {
+//     return (
+//       <div>
+//         <Button component={Link} to={`/characters/${this.randomNumber}`}>
+//           Random
+//         </Button>
+//       </div>
+//     );
+//   }
+// }
+
+// export default Random;

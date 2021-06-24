@@ -4,8 +4,15 @@ class Characters extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      characters: {name: "", image: "", species: "", status: "", gender: ""},
-      origin: {name: ""},
+      characters: {
+        name: "",
+        image: "",
+        species: "",
+        status: "",
+        gender: "",
+        origin: { name: "" },
+      },
+      // origin: {name: ""},
     };
   }
   componentDidMount() {
@@ -16,7 +23,7 @@ class Characters extends Component {
         console.log("character bio", data);
         this.setState({
           characters: data,
-          origin: data.origin,
+          // origin: data.origin,
         });
       });
   }
@@ -35,7 +42,7 @@ class Characters extends Component {
         <br></br>
         <strong>Gender:{this.state.characters.gender}</strong>
         <br></br>
-        <strong>Origin:{this.state.origin.name}</strong>
+        <strong>Origin:{this.state.characters.origin.name}</strong>
       </div>
     );
   }
