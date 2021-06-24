@@ -13,19 +13,15 @@ class Navigation extends Component {
       number: "",
     };
   }
+  handleClick = () => {
+    this.setState({
+      number: this.randomNumber(),
+    });
+  };
   randomNumber() {
     const min = 1;
     const max = 671;
     return (Math.random() * (max - min) + min).toFixed(0);
-  }
-  changeNumber() {
-    if (this.state.number === "") {
-      return this.randomNumber();
-    } else {
-      this.setState({
-        number: "",
-      });
-    }
   }
   render() {
     return (
@@ -49,9 +45,10 @@ class Navigation extends Component {
             </Col>
             <Col>
               <Button
+                onClick={this.handleClick}
                 className="li-link-color"
                 component={Link}
-                to={`/characters/${this.changeNumber()}`}
+                to={`/characters/${this.state.number}`}
               >
                 Random Character
               </Button>
