@@ -1,6 +1,6 @@
 import "./App.css";
 import Header from "./components/Header/Header";
-import Navigation from "./components/Navigation/Navigation";
+// import Navigation from "./components/Navigation/Navigation";
 import Home from "./components/Home/Home";
 import Characters from "./components/Characters/Characters";
 import Search from "./components/Search/Search";
