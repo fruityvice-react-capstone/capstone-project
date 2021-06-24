@@ -22,7 +22,7 @@ body {
   flex-wrap: wrap;
   width: fit-content;
   justify-content: space-around;
-  height: 150px;
+  height: fit-content;
   margin-left: 40px;
   margin-right: 40px;
   padding: 15px;

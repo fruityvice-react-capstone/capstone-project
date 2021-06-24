@@ -7,10 +7,25 @@ import Col from "react-bootstrap/Col";
 import "./Navigation.css";
 
 class Navigation extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      number: "",
+    };
+  }
   randomNumber() {
     const min = 1;
     const max = 671;
     return (Math.random() * (max - min) + min).toFixed(0);
+  }
+  changeNumber() {
+    if (this.state.number === "") {
+      return this.randomNumber();
+    } else {
+      this.setState({
+        number: "",
+      });
+    }
   }
   render() {
     return (
@@ -34,11 +49,11 @@ class Navigation extends Component {
             </Col>
             <Col>
               <Button
-                className="li-link-color, randomBtn"
+                className="li-link-color"
                 component={Link}
-                to={`/characters/${this.randomNumber()}`}
+                to={`/characters/${this.changeNumber()}`}
               >
-                <p>Random Character</p>
+                Random Character
               </Button>
             </Col>
           </Row>
