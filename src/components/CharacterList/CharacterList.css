@@ -22,17 +22,24 @@ body {
   flex-wrap: wrap;
   width: fit-content;
   justify-content: space-around;
-  height: fit-content;
+  height: 150px;
   margin-left: 40px;
   margin-right: 40px;
   padding: 15px;
-}
-.characterContainer ul span {
-  font-size: x-large;
+  padding-top: 0;
+  margin-bottom: 0;
+  clear: left;
 }
 .li-link-color {
   color: black;
   font-weight: 400;
+}
+h1 {
+  width: max-content;
+  padding-top: 20px;
+  float: left;
+  padding-left: 20px;
+  padding-bottom: 0;
 }
 /* .category-letter {
   font-size: 200;

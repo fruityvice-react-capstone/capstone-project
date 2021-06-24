@@ -10,8 +10,7 @@ class Navigation extends Component {
   randomNumber() {
     const min = 1;
     const max = 671;
-    let randomNum = (Math.random() * (max - min) + min).toFixed(0);
-    return randomNum;
+    return (Math.random() * (max - min) + min).toFixed(0);
   }
   render() {
     return (
@@ -35,7 +34,7 @@ class Navigation extends Component {
             </Col>
             <Col>
               <Button
-                className="li-link-color"
+                className="li-link-color, randomBtn"
                 component={Link}
                 to={`/characters/${this.randomNumber()}`}
               >
