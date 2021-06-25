@@ -21,25 +21,22 @@ class Navigation extends Component {
         <Container fluid>
           <Row>
             <Col>
-              <Link className="li-link-color" to="/">
+              <Link className="nav-link-color" to="/">
                 Home
               </Link>
             </Col>
             <Col>
-              <Link className="li-link-color" to="/characters">
+              <Link className="nav-link-color" to="/characters">
                 Characters
               </Link>
             </Col>
             <Col>
-              <Link className="li-link-color" to="/search">
+              <Link className="nav-link-color" to="/search">
                 Search
               </Link>
             </Col>
             <Col>
               <Button
-
-                className="li-link-color"
-
                 component={Link}
                 to={`/characters/${this.randomNumber()}`}
               >
