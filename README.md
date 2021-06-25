@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# Welcome to our Rick and Morty Site!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Vist us at [Our Site](https://rick-and-morty-react-capstone.herokuapp.com/)
 
-## Available Scripts
+Created by Joyce Young, Johanny Clase, and Daniel de la Huerta
 
-In the project directory, you can run:
+## Here's what our page is about:
 
-### `npm start`
+While looking through a million and one APIs, we came across this particular API listing every character from Rick and Morty with plenty of details to work with [The Rick and Morty API](https://rickandmortyapi.com/).\
+Our group built a modern Single-Page Application(SPA) that organizes the information given by the API to make searching for characters, and their info, much easier.\
+The SPA utilizes [Create React App](https://github.com/facebook/create-react-app) as a scaffolding and [React Router]{https://github.com/ReactTraining/react-router} to connect our components into a single page.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## To get started, follow the directions below:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### First Fork our repository from GitHub:
 
-### `npm test`
+[Our Repo](https://github.com/fruityvice-react-capstone/capstone-project.git)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Next clone the GitHub repo to your local repo:
 
-### `npm run build`
+Use the command: `git clone <your-gitHub-repo>`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Download the technologies listed below:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Note: Node.js is required to run these commands!**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Node Modules from Create React App
+- React Router
+- React Bootstrap
+- Material UI
 
-### `npm run eject`
+by running `npm install`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Run the app!
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Run the app in the development mode using: `npm start`\
+Open [http://localhost:3000](http://localhost:3000)

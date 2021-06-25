@@ -6,14 +6,23 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "./Navigation.css";
 
-import { Navbar, Nav, NavDropdown, Form, FormControl } from "react-bootstrap";
-
 class Navigation extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      selectedId: 1,
+    };
+  }
+  handleClick = () => {
+    this.setState({
+      selectedId: this.randomNumber(),
+    });
+    window.location = `/characters/${this.randomNumber()}`;
+  };
   randomNumber() {
     const min = 1;
     const max = 671;
-    let randomNum = (Math.random() * (max - min) + min).toFixed(0);
-    return randomNum;
+    return (Math.random() * (max - min) + min).toFixed(0);
   }
   render() {
     return (
@@ -37,10 +46,13 @@ class Navigation extends Component {
             </Col>
             <Col>
               <Button
+
+                onClick={this.handleClick}
+                className="li-link-color"
                 component={Link}
-                to={`/characters/${this.randomNumber()}`}
+                to={`/characters/${this.state.selectedId}`}
               >
-                <p>Random Character</p>
+                Random Character
               </Button>
             </Col>
           </Row>

@@ -32,8 +32,8 @@ function App() {
         <Route exact path="/characters">
           <CharacterList />
         </Route>
-        <Route path="/characters/:selectedId" component={Characters} />
-        <Route path="/Search">
+        <Route exact path="/characters/:selectedId" component={Characters} />
+        <Route exact path="/Search">
           <Search />
         </Route>
       </Switch>

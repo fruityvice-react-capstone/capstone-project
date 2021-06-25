@@ -14,8 +14,6 @@ body {
   text-align: left;
   list-style-type: none;
   padding: 5px;
-  /* display: flex;
-  flex-direction: column; */
 }
 .characterContainer ul {
   max-width: 100%;
@@ -28,17 +26,20 @@ body {
   margin-left: 40px;
   margin-right: 40px;
   padding: 15px;
-}
-/* .aContainer {
-  display: block;
-  box-sizing: border-box;
-} */
-.characterContainer ul span {
-  font-size: x-large;
+  padding-top: 0;
+  margin-bottom: 0;
+  clear: left;
 }
 .li-link-color {
   color: black;
   font-weight: 400;
+}
+.characterContainer h1 {
+  width: max-content;
+  padding-top: 20px;
+  float: left;
+  padding-left: 20px;
+  padding-bottom: 0;
 }
 /* .category-letter {
   font-size: 200;
