@@ -86,9 +86,10 @@ class Home extends Component {
     // })
     return (
       <div>
-        <Carousel fade>
+        <Carousel fade className="carouselContainer">
           <Carousel.Item>
             <img
+
               className="d-block w-100"
               src="/images/carousel-wide-mirror-big.png"
               alt="First slide"
