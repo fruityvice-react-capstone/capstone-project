@@ -38,5 +38,5 @@ Open [http://localhost:3000](http://localhost:3000)
 
 ## The wireframe for our project is shown below:
 
-(https://github.com/fruityvice-react-capstone/capstone-project/blob/main/public/images/wireFrame1.jpg)
-https://github.com/fruityvice-react-capstone/capstone-project/blob/main/public/images/wireFrame2.jpg
+[Page 1](https://github.com/fruityvice-react-capstone/capstone-project/blob/main/public/images/wireFrame1.jpg)
+[Page 2](https://github.com/fruityvice-react-capstone/capstone-project/blob/main/public/images/wireFrame2.jpg)
