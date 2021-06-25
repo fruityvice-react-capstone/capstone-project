@@ -10,6 +10,12 @@ While looking through a million and one APIs, we came across this particular API
 Our group built a modern Single-Page Application(SPA) that organizes the information given by the API to make searching for characters, and their info, much easier.\
 The SPA utilizes [Create React App](https://github.com/facebook/create-react-app) as a scaffolding and [React Router](https://github.com/ReactTraining/react-router) to connect our components into a single page.
 
+## Here's what you can do on our page:
+
+1. Look through the entire list of chacters from the show to date.
+2. Search specifically by name, species, and status.
+3. A random button that will take you a random character page.
+
 ## To get started, follow the directions below:
 
 ### First Fork our repository from GitHub:
