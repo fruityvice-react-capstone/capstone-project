@@ -42,6 +42,7 @@ class Navigation extends Component {
             <Col>
               <Link className="li-link-color" to="/search">
                 SEARCH
+
               </Link>
             </Col>
             <Col>
