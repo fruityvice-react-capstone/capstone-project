@@ -85,16 +85,14 @@ class Home extends Component {
     // )
     // })
     return (
-      <div>
-        <Carousel fade className="carouselContainer">
+      <div className="carouselDiv">
+        <Carousel fade>
           <Carousel.Item>
             <img
-
               className="d-block w-100"
-              src="/images/carousel-wide-mirror-big.png"
+              src="/images/carousel-wide-mirror.png"
               alt="First slide"
             />
-
             <Carousel.Caption className="carouselInfo">
               <img src="/images/rick05.jpg" alt="rick" />
 
@@ -110,7 +108,7 @@ class Home extends Component {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="/images/carousel-wide-mirror-big.png"
+              src="/images/carousel-wide-mirror.png"
               alt="First slide"
             />
             <Carousel.Caption className="carouselInfo">
@@ -127,7 +125,7 @@ class Home extends Component {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="/images/carousel-wide-mirror-big.png"
+              src="/images/carousel-wide-mirror.png"
               alt="Third slide"
             />
 

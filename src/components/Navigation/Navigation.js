@@ -31,17 +31,17 @@ class Navigation extends Component {
           <Row>
             <Col>
               <Link className="nav-link-color" to="/">
-                Home
+                HOME
               </Link>
             </Col>
             <Col>
               <Link className="nav-link-color" to="/characters">
-                Characters
+                CHARACTERS
               </Link>
             </Col>
             <Col>
               <Link className="nav-link-color" to="/search">
-                Search
+                SEARCH
               </Link>
             </Col>
             <Col>
