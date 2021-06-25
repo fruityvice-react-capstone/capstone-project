@@ -36,7 +36,7 @@ class Navigation extends Component {
             </Col>
             <Col>
               <Link className="li-link-color" to="/characters">
-                CHRACTERS
+                CHARACTERS
               </Link>
             </Col>
             <Col>

@@ -28,7 +28,9 @@ function App() {
       <hr></hr>
       <Switch>
         <Route exact path="/">
-          <Home />
+          <div className="carouselSize">
+            <Home />
+          </div>
         </Route>
         <Route exact path="/characters">
           <CharacterList />
