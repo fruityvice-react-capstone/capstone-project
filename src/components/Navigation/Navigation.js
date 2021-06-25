@@ -30,19 +30,18 @@ class Navigation extends Component {
         <Container fluid>
           <Row>
             <Col>
-              <Link className="li-link-color" to="/">
-                HOME
+              <Link className="nav-link-color" to="/">
+                Home
               </Link>
             </Col>
             <Col>
-              <Link className="li-link-color" to="/characters">
-                CHARACTERS
+              <Link className="nav-link-color" to="/characters">
+                Characters
               </Link>
             </Col>
             <Col>
-              <Link className="li-link-color" to="/search">
-                SEARCH
-
+              <Link className="nav-link-color" to="/search">
+                Search
               </Link>
             </Col>
             <Col>
