@@ -8,7 +8,7 @@ Created by Joyce Young, Johanny Clase, and Daniel de la Huerta
 
 While looking through a million and one APIs, we came across this particular API listing every character from Rick and Morty with plenty of details to work with [The Rick and Morty API](https://rickandmortyapi.com/).\
 Our group built a modern Single-Page Application(SPA) that organizes the information given by the API to make searching for characters, and their info, much easier.\
-The SPA utilizes [Create React App](https://github.com/facebook/create-react-app) as a scaffolding and [React Router]{https://github.com/ReactTraining/react-router} to connect our components into a single page.
+The SPA utilizes [Create React App](https://github.com/facebook/create-react-app) as a scaffolding and [React Router](https://github.com/ReactTraining/react-router) to connect our components into a single page.
 
 ## To get started, follow the directions below:
 
