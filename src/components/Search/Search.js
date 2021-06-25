@@ -6,6 +6,9 @@ import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import { Link } from "react-router-dom";
 
+import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+import Popover from "react-bootstrap/Popover";
+import Button from "react-bootstrap/Button";
 // import background from "./images/istockphoto-479423528-170667a.jpg";
 
 class Search extends Component {
@@ -39,7 +42,6 @@ class Search extends Component {
         });
       })
       .catch((error) => console.log(error));
-
   };
 
   handleSpeciesChange = (event) => {
@@ -148,6 +150,22 @@ class Search extends Component {
                   required
                 ></input>
                 <input class="center" type="submit"></input>
+                <OverlayTrigger
+                  placement="right"
+                  trigger="hover"
+                  overlay={
+                    <Popover>
+                      <Popover.Title as="h3">Searchable Species:</Popover.Title>
+                      <Popover.Content>
+                        Human, Alien, Clone, Cyborg, Robot, Vampire, Mytholog
+                      </Popover.Content>
+                    </Popover>
+                  }
+                >
+                  <Button className="button-style" variant="link" size="lg">
+                    ?
+                  </Button>
+                </OverlayTrigger>
               </Form>
               <ul className="list-style">{speciesResultsItems}</ul>
             </Col>
@@ -161,6 +179,22 @@ class Search extends Component {
                   required
                 ></input>
                 <input class="center" type="submit"></input>
+                <OverlayTrigger
+                  placement="right"
+                  trigger="hover"
+                  overlay={
+                    <Popover>
+                      <Popover.Title as="h3">
+                        Searchable Statuses:
+                      </Popover.Title>
+                      <Popover.Content>Alive, Dead, Unknown</Popover.Content>
+                    </Popover>
+                  }
+                >
+                  <Button className="button-style" variant="link" size="lg">
+                    ?
+                  </Button>
+                </OverlayTrigger>
                 <ul className="list-style">{statusResultsItems}</ul>
               </Form>
             </Col>
