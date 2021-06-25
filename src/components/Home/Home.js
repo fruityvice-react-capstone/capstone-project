@@ -89,12 +89,14 @@ class Home extends Component {
         <Carousel fade className="carouselContainer">
           <Carousel.Item>
             <img
-              className="carousel-background d-block w-100"
-              src="/images/carousel-wide-mirror.png"
+
+              className="d-block w-100"
+              src="/images/carousel-wide-mirror-big.png"
               alt="First slide"
             />
-            <Carousel.Caption>
-              <img src="/images/rick5.jpg" alt="rick" />
+
+            <Carousel.Caption className="carouselInfo">
+              <img src="/images/rick05.jpg" alt="rick" />
 
               <Link to="/characters/1" className="linkColorClass">
                 {rickSanchez}
@@ -108,11 +110,11 @@ class Home extends Component {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="/images/carousel-wide-mirror.png"
+              src="/images/carousel-wide-mirror-big.png"
               alt="First slide"
             />
-            <Carousel.Caption>
-              <img src="/images/morty2.jpg" alt="morty" />
+            <Carousel.Caption className="carouselInfo">
+              <img src="/images/morty05.jpg" alt="morty" />
               <Link to="/characters/2" className="linkColorClass">
                 {mortySmith}
               </Link>
@@ -125,12 +127,12 @@ class Home extends Component {
           <Carousel.Item>
             <img
               className="d-block w-100"
-              src="/images/carousel-wide-mirror.png"
+              src="/images/carousel-wide-mirror-big.png"
               alt="Third slide"
             />
 
-            <Carousel.Caption>
-              <img src="/images/summer2.png" alt="beth" />
+            <Carousel.Caption className="carouselInfo">
+              <img src="/images/summer05.jpg" alt="beth" />
 
               <Link to="/characters/3" className="linkColorClass">
                 {summerSmith}
@@ -147,8 +149,8 @@ class Home extends Component {
               alt="Third slide"
             />
 
-            <Carousel.Caption>
-              <img src="/images/beth3.png" alt="beth" />
+            <Carousel.Caption className="carouselInfo">
+              <img src="/images/beth05.jpg" alt="beth" />
               <Link to="/characters/4" className="linkColorClass">
                 {bethSmith}
               </Link>
@@ -163,8 +165,8 @@ class Home extends Component {
               src="/images/carousel-wide-mirror.png"
               alt="Third slide"
             />
-            <Carousel.Caption>
-              <img src="/images/jerry3.png" alt="beth" />
+            <Carousel.Caption className="carouselInfo">
+              <img src="/images/jerry05.jpg" alt="beth" />
 
               <Link to="/characters/5" className="linkColorClass">
                 {jerrySmith}
@@ -175,18 +177,6 @@ class Home extends Component {
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
-        {/* <div className="homeImage">
-          <Image
-            src="/images/ntcywUtfIcq3_gMOJk_tQh3Ior3oFARLga_64nlBUfs.png"
-            fluid
-          />
-        </div>
-        <div className="homeImage">
-          <Image
-            src="/images/ntcywUtfIcq3_gMOJk_tQh3Ior3oFARLga_64nlBUfs.png"
-            fluid
-          />
-        </div> */}
       </div>
     );
   }

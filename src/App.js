@@ -7,7 +7,6 @@ import Search from "./components/Search/Search";
 // import Random from "./components/Random/Random";
 import CharacterList from "./components/CharacterList/CharacterList";
 // import Container from "react-bootstrap/Container";
-import Footer from "./components/Footer/Footer";
 
 import { Switch, Route } from "react-router-dom";
 
@@ -28,7 +27,9 @@ function App() {
       <hr></hr>
       <Switch>
         <Route exact path="/">
-          <Home />
+          <div className="carouselSize">
+            <Home />
+          </div>
         </Route>
         <Route exact path="/characters">
           <CharacterList />
@@ -38,9 +39,6 @@ function App() {
           <Search />
         </Route>
       </Switch>
-      <div className="navigationClass">
-        <Footer />
-      </div>
     </div>
   );
 }

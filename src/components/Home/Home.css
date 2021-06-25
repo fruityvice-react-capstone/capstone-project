@@ -13,10 +13,11 @@
 }
 
 .quoteColorClass {
-  color: white;
+  color: rgb(0, 0, 0);
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 20px;
 }
+
 
 @media screen and (max-width: 1000px) {
   .carousel {
@@ -28,4 +29,8 @@
   .w-100 {
     height: max-content;
   }
+
+.carouselInfo {
+  background-color: rgba(227, 247, 197, 0.63);
+
 }
