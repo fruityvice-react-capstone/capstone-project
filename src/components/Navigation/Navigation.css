@@ -1,5 +1,4 @@
-.Navigation-container {
-  color: #ffffff;
-  background-color: #ffffff !important;
-  margin-bottom: 0px;
+.li-link-color {
+  color: black;
+  font-weight: bold;
 }

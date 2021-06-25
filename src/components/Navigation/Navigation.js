@@ -4,15 +4,25 @@ import Button from "@material-ui/core/Button";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-
-import { Navbar, Nav, NavDropdown, Form, FormControl } from "react-bootstrap";
+import "./Navigation.css";
 
 class Navigation extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      selectedId: 1,
+    };
+  }
+  handleClick = () => {
+    this.setState({
+      selectedId: this.randomNumber(),
+    });
+    window.location = `/characters/${this.randomNumber()}`;
+  };
   randomNumber() {
     const min = 1;
     const max = 671;
-    let randomNum = (Math.random() * (max - min) + min).toFixed(0);
-    return randomNum;
+    return (Math.random() * (max - min) + min).toFixed(0);
   }
   render() {
     return (
@@ -20,18 +30,26 @@ class Navigation extends Component {
         <Container fluid>
           <Row>
             <Col>
-              <Link to="/">Home</Link>
+              <Link className="li-link-color" to="/">
+                HOME
+              </Link>
             </Col>
             <Col>
-              <Link to="/characters">Characters</Link>
+              <Link className="li-link-color" to="/characters">
+                CHRACTERS
+              </Link>
             </Col>
             <Col>
-              <Link to="/search">Search</Link>
+              <Link className="li-link-color" to="/search">
+                SEARCH
+              </Link>
             </Col>
             <Col>
               <Button
+                onClick={this.handleClick}
+                className="li-link-color"
                 component={Link}
-                to={`/characters/${this.randomNumber()}`}
+                to={`/characters/${this.state.selectedId}`}
               >
                 Random Character
               </Button>

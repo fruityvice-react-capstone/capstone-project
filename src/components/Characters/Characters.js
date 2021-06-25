@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import "./Characters.css";
+import { withRouter } from "react-router-dom";
 
 class Characters extends Component {
   constructor(props) {
@@ -12,6 +14,7 @@ class Characters extends Component {
         gender: "",
         origin: { name: "" },
       },
+
       // origin: {name: ""},
     };
   }
@@ -20,32 +23,44 @@ class Characters extends Component {
     fetch(`https://rickandmortyapi.com/api/character/${selectedId}`)
       .then((response) => response.json())
       .then((data) => {
-        console.log("character bio", data);
+        // console.log("character bio", data);
         this.setState({
           characters: data,
           // origin: data.origin,
         });
-      });
+      })
+      .catch((error) => console.log(error));
   }
   render() {
     return (
-      <div>
-        <h2>Name:{this.state.characters.name}</h2>
+      <section className="character-bio">
+        <br></br>
+        <h1>{this.state.characters.name}</h1>
         <img
+          className="bio-pic"
           src={this.state.characters.image}
           alt={this.state.characters.name}
         ></img>
         <br></br>
-        <strong>Species:{this.state.characters.species}</strong>
-        <br></br>
-        <strong>Status:{this.state.characters.status}</strong>
-        <br></br>
-        <strong>Gender:{this.state.characters.gender}</strong>
-        <br></br>
-        <strong>Origin:{this.state.characters.origin.name}</strong>
-      </div>
+        <p className="spec-detail-font">
+          <strong className="specs-font">Species: </strong>
+          {this.state.characters.species}
+        </p>
+        <p className="spec-detail-font">
+          <strong className="specs-font">Status: </strong>
+          {this.state.characters.status}
+        </p>
+        <p className="spec-detail-font">
+          <strong className="specs-font">Gender: </strong>
+          {this.state.characters.gender}
+        </p>
+        <p className="spec-detail-font">
+          <strong className="specs-font">Origin: </strong>
+          {this.state.characters.origin.name}
+        </p>
+      </section>
     );
   }
 }
 
-export default Characters;
+export default withRouter(Characters);
