@@ -17,3 +17,15 @@
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 20px;
 }
+
+@media screen and (max-width: 1000px) {
+  .carousel {
+    position: absolute;
+  }
+  .quoteColorClass {
+    font-size: 10px;
+  }
+  .w-100 {
+    height: max-content;
+  }
+}
