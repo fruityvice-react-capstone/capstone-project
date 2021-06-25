@@ -30,23 +30,23 @@ class Navigation extends Component {
         <Container fluid>
           <Row>
             <Col>
-              <Link className="nav-link-color" to="/">
-                Home
+              <Link className="li-link-color" to="/">
+                HOME
               </Link>
             </Col>
             <Col>
-              <Link className="nav-link-color" to="/characters">
-                Characters
+              <Link className="li-link-color" to="/characters">
+                CHRACTERS
               </Link>
             </Col>
             <Col>
-              <Link className="nav-link-color" to="/search">
-                Search
+              <Link className="li-link-color" to="/search">
+                SEARCH
+
               </Link>
             </Col>
             <Col>
               <Button
-
                 onClick={this.handleClick}
                 className="li-link-color"
                 component={Link}

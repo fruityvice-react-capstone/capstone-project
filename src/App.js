@@ -7,6 +7,7 @@ import Search from "./components/Search/Search";
 // import Random from "./components/Random/Random";
 import CharacterList from "./components/CharacterList/CharacterList";
 // import Container from "react-bootstrap/Container";
+import Footer from "./components/Footer/Footer";
 
 import { Switch, Route } from "react-router-dom";
 
@@ -37,6 +38,9 @@ function App() {
           <Search />
         </Route>
       </Switch>
+      <div className="navigationClass">
+        <Footer />
+      </div>
     </div>
   );
 }
